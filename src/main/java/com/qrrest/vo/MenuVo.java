@@ -9,7 +9,21 @@ import com.qrrest.model.Menu;
 public class MenuVo {
 	Menu menu;
 	ArrayList<Dish> dishes;
+	String restName;
+	String restAddr;
 	
+	public String getRestName() {
+		return restName;
+	}
+	public void setRestName(String restName) {
+		this.restName = restName;
+	}
+	public String getRestAddr() {
+		return restAddr;
+	}
+	public void setRestAddr(String restAddr) {
+		this.restAddr = restAddr;
+	}
 	public Menu getMenu() {
 		return menu;
 	}

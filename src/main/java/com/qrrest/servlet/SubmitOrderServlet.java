@@ -42,26 +42,33 @@ public class SubmitOrderServlet extends HttpServlet {
 
 	/**
 	 * The doPost method of the servlet. <br>
-	 *
-	 * This method is called when a form has its tag value method equals to post.
 	 * 
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
+	 * This method is called when a form has its tag value method equals to
+	 * post.
+	 * 
+	 * @param request
+	 *            the request send by the client to the server
+	 * @param response
+	 *            the response send by the server to the client
+	 * @throws ServletException
+	 *             if an error occurred
+	 * @throws IOException
+	 *             if an error occurred
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Long t_id = Long.valueOf(request.getParameter("t_id"));
-		
+
 		MenuService mservice = new MenuService();
 		TableService tservice = new TableService();
-		
+
 		Restaurant rest = tservice.getRestByTableId(String.valueOf(t_id));
-		WSVirtualOrder wso = WSOrderingListHelper.getInstance().getSubmittedOrderByTableId(String.valueOf(t_id));
-		
-		MenuVo mv = mservice.createMenu(t_id, rest.getRest_id(), wso);
-		
+		WSVirtualOrder wso = WSOrderingListHelper.getInstance()
+				.getSubmittedOrderByTableId(String.valueOf(t_id));
+
+		MenuVo mv = mservice.createMenu(t_id, rest.getRest_id(),
+				wso.getDishesMap(), wso.getCustomerIdList());
+
 		Gson gson = new Gson();
 		PrintWriter out = response.getWriter();
 		String result = gson.toJson(mv);
@@ -72,8 +79,9 @@ public class SubmitOrderServlet extends HttpServlet {
 
 	/**
 	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException if an error occurs
+	 * 
+	 * @throws ServletException
+	 *             if an error occurs
 	 */
 	public void init() throws ServletException {
 		// Put your code here

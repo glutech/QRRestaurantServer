@@ -1,7 +1,10 @@
 package com.qrrest.servlet;
 
-
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
+import com.qrrest.model.Restaurant;
+import com.qrrest.service.MenuService;
+import com.qrrest.service.RestaurantService;
+import com.qrrest.vo.MenuVo;
 import com.qrrest.wsorder.DishesMapBuilderForGson;
 
 public class SubmitBookOrder extends HttpServlet {
@@ -30,8 +37,9 @@ public class SubmitBookOrder extends HttpServlet {
 
 	/**
 	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException if an error occurs
+	 * 
+	 * @throws ServletException
+	 *             if an error occurs
 	 */
 	public void init() throws ServletException {
 		// Put your code here
@@ -50,16 +58,34 @@ public class SubmitBookOrder extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		super.doPost(req, resp);
+		Long cID = Long.parseLong(req.getParameter("c_id"));
 		Long rID = Long.parseLong(req.getParameter("r_id"));
 		String orderStr = req.getParameter("order_list");
 		
-		// 使用与客户端统一的 gson 序列化格式的类来反序列化，DishesMapBuilderForGson
-		DishesMapBuilderForGson mb = new Gson().fromJson(orderStr, DishesMapBuilderForGson.class);
-		mb.getMap();
-		
-		System.out.println("Got a book order for rID:" + rID + " /and the detail:" + orderStr);
-	}
-	
-	
+		Gson gson = new Gson();
 
+		// 使用与客户端统一的 gson 序列化格式的类来反序列化，DishesMapBuilderForGson
+		Map<Long, Integer> dishMap = gson.fromJson(orderStr,
+				DishesMapBuilderForGson.class).getMap();
+
+		System.out.println("Got a book order for rID:" + rID
+				+ " /and the detail:" + orderStr);
+
+		MenuService mService = new MenuService();
+		RestaurantService restService = new RestaurantService();
+
+		Restaurant rest = restService.getRestById(String.valueOf(rID));
+
+		List<Long> customers = new ArrayList<Long>();
+		customers.add(cID);
+		MenuVo mv = mService.createMenu(0, rID, dishMap, customers);
+
+		String result = gson.toJson(mv);
+
+		PrintWriter out = resp.getWriter();
+		result = new String(result.getBytes("utf-8"), "iso-8859-1");
+		out.append(result);
+		out.close();
+
+	}
 }
