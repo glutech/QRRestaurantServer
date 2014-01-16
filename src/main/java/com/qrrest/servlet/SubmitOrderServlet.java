@@ -67,7 +67,7 @@ public class SubmitOrderServlet extends HttpServlet {
 				.getSubmittedOrderByTableId(String.valueOf(t_id));
 
 		MenuVo mv = mservice.createMenu(t_id, rest.getRest_id(),
-				wso.getDishesMap(), wso.getCustomerIdList());
+				wso.getDishesMap(), wso.getCustomerIdList(), 1);
 
 		Gson gson = new Gson();
 		PrintWriter out = response.getWriter();

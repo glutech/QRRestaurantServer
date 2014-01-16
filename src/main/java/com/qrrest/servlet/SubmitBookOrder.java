@@ -76,7 +76,7 @@ public class SubmitBookOrder extends HttpServlet {
 
 		List<Long> customers = new ArrayList<Long>();
 		customers.add(cID);
-		MenuVo mv = mService.createMenu(0, rID, dishMap, customers);
+		MenuVo mv = mService.createMenu(0, rID, dishMap, customers, 0);
 
 		String result = gson.toJson(mv);
 

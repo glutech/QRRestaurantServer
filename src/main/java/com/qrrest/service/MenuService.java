@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 import com.qrrest.dao.CmMap;
@@ -31,10 +32,13 @@ public class MenuService {
 		ddao = new DishesDao();
 	}
 
-	public double calTotalPrice(List<Long> didlist) {
+	public double calTotalPrice(Map<Long, Integer> dishesMap) {
 		double result = 0.0;
-		for (Long did : didlist) {
-			result += ddao.getPriceByDishId(did);
+
+		Iterator it = dishesMap.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry<Long, Integer> entry = (Entry<Long, Integer>) it.next();
+			result += ddao.getPriceByDishId(entry.getKey()) * entry.getValue();
 		}
 
 		return result;
@@ -53,8 +57,23 @@ public class MenuService {
 	// return menu;
 	// }
 
+	/**
+	 * 创建订单
+	 * 
+	 * @param t_id
+	 *            餐桌 ID，预订的时候不需要，可以随意，默认为0
+	 * @param r_id
+	 *            餐厅 ID
+	 * @param dishes
+	 *            菜品 ID 和其对应的数量， Map 类型
+	 * @param customers
+	 *            该订单点菜的用户们，预订的时候只有一个用户
+	 * @param status
+	 *            订单状态，0为已预订，1为已确认订单，2为已结账
+	 * @return
+	 */
 	public MenuVo createMenu(long t_id, long r_id, Map<Long, Integer> dishes,
-			List<Long> customers) {
+			List<Long> customers, int status) {
 		MenuVo mv = new MenuVo();
 
 		// Map<Long, Integer> dishes = wso.getDishesMap();
@@ -71,8 +90,8 @@ public class MenuService {
 		}
 
 		Menu m = new Menu();
-		m.setMenu_price(calTotalPrice(dids));
-		m.setMenu_status(1);
+		m.setMenu_price(calTotalPrice(dishes));
+		m.setMenu_status(status);
 		m.setMenu_time((new Timestamp(System.currentTimeMillis())).toString());
 		m.setMenu_type(0);
 		m.setRest_id(r_id);
