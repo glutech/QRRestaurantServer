@@ -56,8 +56,6 @@ public class SubmitBookOrder extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doPost(req, resp);
 		Long cID = Long.parseLong(req.getParameter("c_id"));
 		Long rID = Long.parseLong(req.getParameter("r_id"));
 		String orderStr = req.getParameter("order_list");
