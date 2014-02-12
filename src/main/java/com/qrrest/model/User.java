@@ -4,6 +4,7 @@ public class User {
 	private long user_id;
 	private String user_name;
 	private String user_pwd;
+	private String user_nickname;
 	private long rest_id;
 	
 	public long getUser_id() {
@@ -23,6 +24,12 @@ public class User {
 	}
 	public void setUser_pwd(String user_pwd) {
 		this.user_pwd = user_pwd;
+	}
+	public void setUser_nickname(String user_nickname) {
+		this.user_nickname = user_nickname;
+	}
+	public String getUser_nickname() {
+		return user_nickname;
 	}
 	public long getRest_id() {
 		return rest_id;

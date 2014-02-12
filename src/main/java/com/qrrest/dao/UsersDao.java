@@ -23,6 +23,7 @@ public class UsersDao {
 				usr.setUser_id(rs.getLong("user_id"));
 				usr.setUser_name(rs.getString("user_name"));
 				usr.setUser_pwd(rs.getString("user_pwd"));
+				usr.setUser_nickname(rs.getString("user_nickname"));
 				usr.setRest_id(rs.getLong("rest_id"));
 			}
 		} catch (SQLException e) {
