@@ -890,6 +890,8 @@ standard deployment descriptor.
     <servlet-name>SubmitBookOrder</servlet-name>
     <servlet-class>com.qrrest.servlet.SubmitBookOrder</servlet-class>
   </servlet>
+  
+
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/servlet/LoginServlet</url-pattern>
@@ -1006,7 +1008,57 @@ standard deployment descriptor.
     <servlet-name>SubmitBookOrder</servlet-name>
     <url-pattern>/book/submit_bookorder</url-pattern>
   </servlet-mapping>
+  
+  
+  
+  <filter>
+    <filter-name>UserEncodingFilter</filter-name>
+    <filter-class>com.qrrest.service.filter.user.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>UserEncodingFilter</filter-name>
+    <url-pattern>/User/*</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <filter-name>UserAuthFilter</filter-name>
+    <filter-class>com.qrrest.service.filter.user.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>UserAuthFilter</filter-name>
+    <url-pattern>/User/*</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserVerifycodeServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.VerifycodeServlet</servlet-class>
+  </servlet>
+
+  
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/User/Login.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserVerifycodeServlet</servlet-name>
+    <url-pattern>/User/Verifycode.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>/User/Login.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  
+  
 </web-app>
