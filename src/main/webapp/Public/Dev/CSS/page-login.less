@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+#page-login {
+	& {
+		width: 100%; height: 100%;
+		.func-layout-flex-center;
+	}
+	body {
+		padding: 0; padding-bottom: 12%;
+	}
+	.container {
+		width: 640px; min-width: 640px;
+	}
+	.model.model-login {
+		& { 
+			margin-bottom: 0;
+		}
+		& > h1 {
+			.font-heiti; .text-center; line-height: 1.618em;
+		}
+		form {
+			& {
+				font-size: @font-size-base;
+			}
+			.control-label {
+				padding-right: 0; font-weight: normal;
+			}
+			.model-verifycode {
+				.btn-block; .func-space; border: none;
+				padding-left: 1em;
+			}
+			.model-submit {
+				.btn-danger; .btn-block;
+			}
+		}
+	}
+}

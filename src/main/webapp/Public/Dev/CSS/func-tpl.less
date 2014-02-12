@@ -1,0 +1,40 @@
+.func-size(@width; @height) {
+	width: @width; height: @height;
+}
+.func-space(@padding: 0; @margin: 0) {
+	padding: @padding; margin: @margin;
+}
+.func-postion-center(@width; @height) {
+	position: absolute; left: 50%; top: 50%;
+    margin: 0; margin-left: -@width/2; margin-top: -@height/2;
+}
+.func-position-corner(all, @top: auto, @right: auto, @bottom: auto, @left: auto) {
+	position: absolute; top: @top; right: @right; bottom: @bottom; left: @left;
+}
+.func-position-corner(left-top, @left: 0, @top: 0) {
+	position: absolute; left: @left; top: @top;
+}
+.func-position-corner(right-top, @right: 0, @top: 0) {
+	position: absolute; right: @right; top: @top;
+}
+.func-position-corner(left-bottom, @left: 0, @bottom: 0) {
+	position: absolute; left: @left; top: @bottom;
+}
+.func-position-corner(right-bottom, @right: 0, @bottom: 0) {
+	position: absolute; right: @right; bottom: @bottom;
+}
+.func-postion-bottom(@bottom: 0) {
+	position: absolute; left: 0; right: 0; bottom: @bottom;
+}
+.func-layout-inlineblock-columns() {
+	display: inline-block; vertical-align: top; height: 100%;
+}
+.func-layout-flex-center(@justify-content: center; @align-items: center) {
+	display: flex; justify-content: @justify-content; align-items: @align-items;
+}
+.func-scroll-none() {
+	overflow: hidden;
+}
+.func-scroll-y(@overflow-y: auto) {
+	overflow: hidden; overflow-y: @overflow-y;
+}

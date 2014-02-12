@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+.plugin {
+
+	&.plugin-maskloading-container {
+		& {
+			position: fixed;
+			left: 0; right: 0; top: 0; bottom: 0;
+			z-index: 9999;
+			display: flex;
+			justify-content: center; align-items: center;
+			background-color: fade(#000, 50%);
+			overflow: hidden;
+		}
+		.plugin-maskloading {
+			& {
+				background-color: #FFF;
+				padding: 30px 60px;
+				border-radius: 5px;
+				display: table;
+			}
+			& > * {
+				display: table-cell; vertical-align: middle;
+			}
+			.plugin-span {
+				padding-left: 0.5em;
+			}
+		}
+	}
+}

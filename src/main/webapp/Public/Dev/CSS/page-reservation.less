@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+#page-reservation {
+
+	.model.model-reservation {
+
+		.model-header {
+			& {
+				position: relative;
+			}
+			h1 {
+				& {
+					margin-bottom: 0; margin-top: 0;
+					.font-heiti;
+				}
+				a {
+					.btn-danger; .btn-sm;
+					.font-sans;
+				}
+			}
+			.dropdown {
+				& {
+					position: absolute; right: 0; bottom: 0;
+				}
+				.glyphicon {
+					.glyphicon-sort;
+				}
+			}
+		}
+		.model-table {
+			& {
+				.table-hover; .table-striped;
+				table-layout: fixed;
+			}
+			thead {
+				.font-heiti;
+			}
+			.model-action {
+				.list-unstyled; .list-inline;
+			}
+			.model-remarks { 
+				display: block; white-space:nowrap; overflow: hidden; text-overflow: ellipsis; 
+			}
+			* {
+				vertical-align: middle;
+			}
+
+		}
+
+	}
+
+
+}

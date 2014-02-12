@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+.module-exValidate {
+
+	> .alert {
+		.error {
+			& {
+				margin-bottom: 0;
+            	font-weight: normal;
+			}
+			&:after {
+				content: '，'
+			}
+			&:last-child:after {
+				content: ''
+			}
+		}
+	}
+
+}

@@ -1,0 +1,41 @@
+<div class="modal-dialog" class="section-reservation-editor">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="model-reservation-editor-container-label">新增预定 | 修改预定&nbsp;&nbsp;<small>张先生</small></h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal panel-body module-exValidate" role="form">
+                <div class="form-group">
+                    <label class="control-label col-xs-2">联系人</label>
+                    <div class="col-xs-9">
+                        <input class="form-control" type="text" placeholder="输入订餐人称呼" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">联系电话</label>
+                    <div class="col-xs-9"><input class="form-control" type="text" placeholder="输入订餐人联系电话"/></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">就餐人数</label>
+                    <div class="col-xs-9"><input class="form-control" type="number" min="1" value="1"/></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">就餐时间</label>
+                    <div class="col-xs-5"><input class="form-control" type="date"/></div>
+                    <div class="col-xs-4"><input class="form-control" type="time"/></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-2">备注</label>
+                    <div class="col-xs-9"><textarea class="form-control" rows="6"></textarea></div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-6">
+                        <button class="model-btn-submit btn" type="submit">新增</button>
+                        <button class="model-btn-back btn" type="button" data-dismiss="modal" aria-hidden="true">返回</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

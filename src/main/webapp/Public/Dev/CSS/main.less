@@ -1,0 +1,214 @@
+@charset 'utf-8';
+
+
+@import "./../../Bootstrap/less/bootstrap.less";
+@import "./../../Bootstrap/less/theme.less";
+@import "./../../Bootswatch/flatly/variables.less";
+@import "./../../Bootswatch/flatly/bootswatch.less";
+
+
+@icon-font-path: './Bootstrap/dist/fonts/';
+
+
+@import "./func-tpl.less";
+@import "./vars-model-board.less";
+
+
+// 常量及属性定义|重置
+
+@font-heiti-name:   "微软雅黑";
+@font-sans-name:    "新宋体", "宋体";
+
+@font-family-sans-serif:    @font-sans-name;     // "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:         @font-sans-name;     // Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:     @font-sans-name;     // Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:          @font-sans-name;     // @font-family-sans-serif;
+
+.font-heiti() { font-family: @font-heiti-name; }
+.font-sans() { font-family: @font-sans-name; }
+
+// @font-size-base:          15px;
+// @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
+// @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
+// @font-size-h1:            floor(@font-size-base * 2.6); // ~36px
+// @font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+// @font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
+// @font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+// @font-size-h5:            @font-size-base;
+// @font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+
+/*@font-size-lead:        54px;
+@font-size-larger:      39px;
+@font-size-x-larger:    32px;
+@font-size-large-x:     26px;
+@font-size-large:       24px;
+@font-size-x-large:     19px;
+@font-size-medium-x:    17px;
+@font-size-medium:      12px;
+@font-size-x-medium:    13px;
+@font-size-small:       12px;*/
+
+
+@font-size-base:        14px;                           // source 15px
+@font-size-large:       floor(@font-size-base * 1.25);  // ~17px
+@font-size-small:       ceil(@font-size-base * 0.85);   // ~12px
+@font-size-h1:          floor(@font-size-base * 2.6);   // ~36px
+@font-size-h2:          floor(@font-size-base * 2.15);  // ~30px
+@font-size-h3:          ceil(@font-size-base * 1.7);    // ~24px
+@font-size-h4:          ceil(@font-size-base * 1.25);   // ~18px
+@font-size-h5:          @font-size-base;
+@font-size-h6:          ceil(@font-size-base * 0.85);   // ~12px
+
+@font-size-lead:        60px;
+
+@input-border-focus:    fade(#3498DB, 75%);     // @brand-info 75%
+@link-color:            @brand-info;                // @brand-success
+@link-hover-color:      darken(@link-color, 10%);   // @link-color
+
+/*@pagination-bg:         @brand-info;
+@pagination-hover-bg:   darken(@brand-info, 15%);
+@pagination-active-bg:  darken(@brand-info, 15%);
+.pagination .disabled a {
+    background-color: lighten(@brand-info, 15%);
+}*/
+
+@container-width: 970px;
+@nav-break-width: 768px;
+
+@container-margin-width: 15px;
+
+
+// js 调用样式
+
+.style-font-sans {
+    .font-sans !important;
+}
+
+
+
+// 新增公共样式
+
+.money:after {
+    content: "￥"; font-style: normal; padding-left: 0.1em; padding-right: 0.1em;
+}
+
+a.disabled {
+    text-decoration: none; cursor: not-allowed; color: mix(@link-hover-color, @gray-lighter);
+}
+
+
+// 重写样式
+
+body {
+    .font-sans;
+    font-size: @font-size-base;
+    overflow-y: scroll !important;
+    word-break: break-all;
+}
+.glyphicon {
+    margin-right: 0.332em;
+    .model & {
+        margin-right: 0;
+    }
+}
+.badge {
+    margin-left: 0.332em;
+    .model & {
+        margin-left: 0;
+    }
+}
+.list-unstyled {
+    margin: 0;
+}
+.container .row {
+    > .col-xs-1:first-child, > .col-xs-2:first-child, > .col-xs-3:first-child, > .col-xs-4:first-child, > .col-xs-5:first-child, > .col-xs-6:first-child, > .col-xs-7:first-child, > .col-xs-8:first-child, > .col-xs-9:first-child, > .col-xs-10:first-child, > .col-xs-11:first-child {
+        padding-left: 0;
+    }
+    > .col-xs-1:last-child, > .col-xs-2:last-child, > .col-xs-3:last-child, > .col-xs-4:last-child, > .col-xs-5:last-child, > .col-xs-6:last-child, > .col-xs-7:last-child, > .col-xs-8:last-child, > .col-xs-9:last-child, > .col-xs-10:last-child, > .col-xs-11:last-child {
+        padding-right: 0;
+    }
+}
+.thumbnail .caption p:last-child {
+    margin-bottom: 0;
+}
+
+.btn-default {
+    text-shadow: none;
+}
+
+
+// 主体内容使用非响应式布局
+
+@media (max-width: @nav-break-width) {
+    .navbar-fixed-top {
+        .container { width: auto; min-width: inherit; }
+    }
+}
+@media (min-width: @nav-break-width) and (max-width: @container-width) {
+    .navbar-fixed-top {
+        .container { width: 100%; min-width: inherit; }
+        .container .navbar-collapse .navbar-right { position: absolute; right: 15px; }
+    }
+}
+.container {
+   max-width: none !important; min-width: @container-width; width: @container-width; 
+}
+
+
+
+// nav栏样式
+
+body {
+    min-width: @container-width; padding-top: 62px + @container-margin-width * 3; padding-bottom: @container-margin-width * 2; //修正fixed的补白
+}
+.navbar-fixed-top {
+    .container {
+        & { .font-heiti; }
+        .navbar-header a { font-size: @font-size-h3; }
+        .navbar-collapse a { font-size: @font-size-large; }
+        .navbar-collapse .navbar-right a { font-size: @font-size-base; }
+        .navbar-collapse { max-height: none; }
+        .navbar-header .navbar-brand:hover {  color: white !important; cursor:  default; }
+        .navbar-collapse {
+            .navbar-right > li {
+                & {
+                    > a {
+                        > .badge { font-size: @font-size-small; color: inherit; }
+                        &:hover .badge { background-color: white; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// 层级指示栏
+ol.breadcrumb {
+    font-size: @font-size-large; .font-heiti; line-height: 2em;
+    margin-bottom: @container-margin-width * 2;
+}
+
+
+
+// 页脚样式
+
+div.footer.container {
+    & { padding: 0; margin-top: @container-margin-width * 3; }
+    hr { margin: 0; margin-bottom: @container-margin-width; }
+}
+
+
+@import "./plugin.maskloading.less";
+@import "./plugin.exValidate.less";
+
+@import "./page-login.less";
+@import "./page-board.less";
+@import "./section-board-status.less";
+@import "./page-reservation.less";
+@import "./section-reservation-editor.less";
+@import "./page-board-list.less";
+@import "./page-board-editor.less";
+@import "./page-dish-list.less";
+@import "./page-dish-editor.less";

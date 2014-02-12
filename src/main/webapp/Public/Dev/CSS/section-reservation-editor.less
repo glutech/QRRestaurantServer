@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+#section-reservation-editor-container {
+
+
+	& {
+		@width: 800px;
+	    @height: 600px;
+	    @header-height: 55px;
+	    & {
+	        min-width: @container-width; overflow: hidden;
+	    }
+	    div.modal-dialog { 
+	        & {
+	            .func-postion-center(@width, @height);
+	        }
+	        &, & div.modal-content { 
+	            .func-size(@width, @height); 
+	        }
+	        div.modal-content {
+	            & {
+	                .func-scroll-none();
+	            }
+	            div.modal-header { 
+	                & { height: @header-height; }
+	                * { .font-heiti; }
+	            }
+	            div.modal-body { 
+	                & {
+	                    height: @height - @header-height;
+	                }
+	            }
+	            form {
+					& {
+						font-size: @font-size-base;
+					}
+					.control-label {
+						font-weight: normal;
+					}
+					.model-btn-submit {
+						.btn-danger;
+					}
+					.model-btn-back {
+						.btn-default;
+					}
+					input[type=date], input[type=time] {
+						text-align: right; letter-spacing: 0.1em;
+						-webkit-datetime-edit { padding: 1em; }
+-webkit-datetime-edit-fields-wrapper { background: silver; }
+-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+-webkit-datetime-edit-month-field { color: blue; }
+-webkit-datetime-edit-day-field { color: green; }
+-webkit-datetime-edit-year-field { color: purple; }
+-webkit-inner-spin-button { display: none; }
+-webkit-calendar-picker-indicator { background: orange; }
+					}
+				}
+	        }
+	    }
+	}
+}
