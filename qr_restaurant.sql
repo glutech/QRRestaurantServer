@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-13 10:49:16
+Date: 2014-02-13 13:56:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -434,12 +434,13 @@ INSERT INTO `restaurants` VALUES ('4', 'Beef restaurant 4', '4 is me', '西餐',
 DROP TABLE IF EXISTS `tables`;
 CREATE TABLE `tables` (
   `table_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `table_name` varchar(256) NOT NULL,
+  `table_name` varchar(255) NOT NULL,
   `table_type` varchar(128) NOT NULL,
   `table_sort` int(1) NOT NULL,
   `table_status` int(1) NOT NULL,
   `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`table_id`),
+  UNIQUE KEY `name_unique` (`table_name`) USING HASH,
   KEY `rest_id` (`rest_id`),
   KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
   CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -457,11 +458,13 @@ INSERT INTO `tables` VALUES ('2', 'b2', 'baoxiang', '0', '1', '1');
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `user_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(256) NOT NULL,
-  `user_pwd` varchar(256) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `user_pwd` varchar(255) NOT NULL,
   `user_nickname` varchar(255) NOT NULL,
   `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`user_id`),
+  UNIQUE KEY `name_unique` (`user_name`) USING BTREE,
+  UNIQUE KEY `nickname_unique` (`user_nickname`,`rest_id`) USING BTREE,
   KEY `rest_id` (`rest_id`),
   CONSTRAINT `fromRestaurantInUsers` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
