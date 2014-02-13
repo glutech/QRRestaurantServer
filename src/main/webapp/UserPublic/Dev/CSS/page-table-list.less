@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-#page-board-list {
+#page-table-list {
 	
-	.model.model-board-list {
+	.model.model-table-list {
 
 		> .model-container-left {
 
@@ -39,13 +39,13 @@
 					}
 				}
 				.style(@category) {
-					@color_name: "color-model-board-@{category}";
+					@color_name: "color-model-table-@{category}";
 	        		@color: @@color_name;
 					.model-status {
 						color: fade(@color, 85%);
 					}
 					.model-status:after {
-						content: ~"@{status-model-board-@{category}}";
+						content: ~"@{status-model-table-@{category}}";
 					}
 				}
 				.style();

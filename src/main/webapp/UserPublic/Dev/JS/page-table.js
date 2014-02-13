@@ -1,6 +1,6 @@
 ;!function($) {
 
-	if($('#page-board').ex().empty()) return;
+	if($('#page-table').ex().empty()) return;
 
 	;$(function() {
 
@@ -39,7 +39,7 @@
 			};
 			var CONST_OVERVIEW_HEIGHT = 110;
 			var CONST_OFFSET_HEIGHT = 20;
-			$('div.model.model-board-map > ul.model-list > li.model-item > a.model-module > span.model-name').each(function() {
+			$('div.model.model-table-map > ul.model-list > li.model-item > a.model-module > span.model-name').each(function() {
 				var $span = $(this)
 				  , $a = $span.closest('a.model-module')
 				  , span_coreHeight = coreHeight($span);

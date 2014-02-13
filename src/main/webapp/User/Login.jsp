@@ -31,7 +31,7 @@ if(new UserAuthService(request.getSession()).isAuth()) {
                     <label class="control-label col-xs-2">验证码</label>
                     <div class="col-xs-10">
                         <div class="input-group">
-                            <input class="form-control" name="verifycode" type="text" placeholder="输入验证码" />
+                            <input class="form-control" name="verifycode" type="text" placeholder="输入验证码" autocomplete="off" />
                             <span class="input-group-btn">
                                 <a class="model-verifycode btn" href="#" title="点击更换验证码">
                                     <img src="./Verifycode.do" alt="验证码" />

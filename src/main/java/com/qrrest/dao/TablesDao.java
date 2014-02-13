@@ -38,7 +38,7 @@ public class TablesDao {
 		}
 		return table;
 	}
-	
+
 	public long getRestIdByTableId(long tid) {
 		long rid = 0;
 		String sql = "select rest_id from tables where table_id=?";
@@ -53,13 +53,13 @@ public class TablesDao {
 		}
 		return rid;
 	}
-	
+
 	/**
 	 * 获取某餐厅id下的全部餐桌
 	 */
-	public List<Table> getTablesByRestId(long restid){
+	public List<Table> getTablesByRestId(long restid) {
 		List<Table> list = new ArrayList<Table>();
-		String sql = "select * from tables where rest_id=?";
+		String sql = "select * from tables where rest_id=? order by table_sort desc, table_id asc";
 		Object[] params = { restid };
 		ResultSet rs = sqlE.execSqlWithRS(sql, params);
 		try {
@@ -71,7 +71,7 @@ public class TablesDao {
 				table.setTable_sort(rs.getInt("table_sort"));
 				table.setTable_status(rs.getInt("table_status"));
 				table.setRest_id(rs.getLong("rest_id"));
-				
+
 				list.add(table);
 			}
 		} catch (SQLException e) {
@@ -79,19 +79,20 @@ public class TablesDao {
 		}
 		return list;
 	}
-	
+
 	/**
 	 * 新增餐桌
 	 */
 	public boolean insertTable(Table table) {
 		boolean flag = false;
 		String sql = "insert into tables (table_name, table_type, table_sort, table_status, rest_id) values(?, ?, ?, ?, ?)";
-		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_sort(),table.getTable_status(),table.getRest_id()};
-		sqlE.execSqlWithRS(sql, params);
-		
+		Object[] params = { table.getTable_name(), table.getTable_type(),
+				table.getTable_sort(), table.getTable_status(),
+				table.getRest_id() };
+		flag = sqlE.execSqlWithoutRS(sql, params);
 		return flag;
 	}
-	
+
 	/**
 	 * 获取餐桌数，用于分页
 	 * 
@@ -100,7 +101,7 @@ public class TablesDao {
 	public int getTablesCount(long restid) {
 		int i = -1;
 		String sql = "select count(*) from tables where rest_id = ?";
-		Object[] params = {restid};
+		Object[] params = { restid };
 		ResultSet rs = sqlE.execSqlWithRS(sql, params);
 		try {
 			while (rs.next()) {
@@ -136,16 +137,16 @@ public class TablesDao {
 	public boolean modifyTableStatus(long tableid, int status) {
 		boolean flag = false;
 		String sql = "update tables set table_status = ? where table_id = ?";
-		Object[] params = { status, tableid};
+		Object[] params = { status, tableid };
 		flag = sqlE.execSqlWithoutRS(sql, params);
-		
+
 		return flag;
 	}
-	
-	public int checkTableStatus(long tid){
+
+	public int checkTableStatus(long tid) {
 		int result = 1;
 		String sql = "select table_status from tables where table_id = ?";
-		Object[] params = {tid};
+		Object[] params = { tid };
 		ResultSet rs = sqlE.execSqlWithRS(sql, params);
 		try {
 			while (rs.next()) {
@@ -154,29 +155,34 @@ public class TablesDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
 	 * 修改餐桌信息
 	 * 
+	 * FIXED: 修改餐桌信息时应仅允许修改常规信息，table_status、rest_id等字段逻辑上不应修改 <br />
+	 * wu.kui@gmail.com 2014-02-13
 	 */
 	public boolean modifyTable(Table table) {
 		boolean flag = false;
-		String sql = "update tables set table_name=?, table_type=?, table_sort=?, table_status=?, rest_id=? where table_id=?";
-		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_sort(),table.getTable_status(),table.getRest_id(),table.getTable_id()};
+		// String sql =
+		// "update tables set table_name=?, table_type=?, table_sort=?, table_status=?, rest_id=? where table_id=?";
+		// Object[] params =
+		// {table.getTable_name(),table.getTable_type(),table.getTable_sort(),table.getTable_status(),table.getRest_id(),table.getTable_id()};
+		String sql = "update tables set table_name=?, table_type=?, table_sort=? where table_id=?";
+		Object[] params = { table.getTable_name(), table.getTable_type(),
+				table.getTable_sort(), table.getTable_id() };
 		flag = sqlE.execSqlWithoutRS(sql, params);
-		
+
 		return flag;
 	}
-	
+
 	/**
-	 * 由餐桌id获取菜品
-	 * 参数tableid:桌号
-	 * 参数menustatus：菜单状态 0（上菜），1（已结），2（预点），3（在点）
+	 * 由餐桌id获取菜品 参数tableid:桌号 参数menustatus：菜单状态 0（上菜），1（已结），2（预点），3（在点）
 	 */
-	public List<Dish> getDishesByTableId(long tableid, int menustatus){
+	public List<Dish> getDishesByTableId(long tableid, int menustatus) {
 		List<Dish> list = new ArrayList<Dish>();
 		MenusDao menusdao = new MenusDao();
 		long menuid = 0;
@@ -190,9 +196,9 @@ public class TablesDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		list = menusdao.getDishesByMenuId(menuid);
-		
+
 		return list;
 	}
 }

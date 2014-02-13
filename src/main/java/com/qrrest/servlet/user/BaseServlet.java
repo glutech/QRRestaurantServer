@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.qrrest.service.UserAuthService;
+
 /**
  * 扩展的基Servlet，扩展Servlet级的工具方法
  * 
@@ -18,6 +20,8 @@ public abstract class BaseServlet extends HttpServlet {
 	private HttpServletRequest _request;
 	private HttpServletResponse _response;
 
+	protected UserAuthService authService;
+
 	/**
 	 * 初始化BaseServlet，提供通用支持和工具方法 <br/>
 	 * 返回当前BaseServlet，方便进一步调用
@@ -26,6 +30,7 @@ public abstract class BaseServlet extends HttpServlet {
 			HttpServletResponse response) {
 		_request = request;
 		_response = response;
+		authService = new UserAuthService(request.getSession());
 		return this;
 	}
 

@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-#section-board-status-container {
+#section-table-status-container {
 
 
 	& {
@@ -109,20 +109,20 @@
 	        }
 	    }
 	    .style(@category) {
-	        @color_name: "color-model-board-@{category}";
+	        @color_name: "color-model-table-@{category}";
 	        @color: @@color_name;
 	        span.model-icon { 
-	            .glyphicon-model-board(@category); color: @color;
+	            .glyphicon-model-table(@category); color: @color;
 	        }
 	        span.model-status:after {
-	            content: ~"@{status-model-board-@{category}}";
+	            content: ~"@{status-model-table-@{category}}";
 	        }
 	        ul.model-action{ 
 	            li ~ li { margin-top: 0.5em;}
-	            li button { .button-model-board(@category); }
+	            li button { .button-model-table(@category); }
 	        }
 	        div.panel { 
-	            .panel-model-board(@category); border-color: fade(@color, 25%);
+	            .panel-model-table(@category); border-color: fade(@color, 25%);
 	        }
 	    }
 	    .style();

@@ -3,11 +3,12 @@
 // @koala-prepend "plugin.maskLoading.js"
 // @koala-prepend "plugin.exValidate.js"
 // @koala-prepend "page-login.js"
-// @koala-prepend "page-board.js"
-// @koala-prepend "section-board-status.js"
+// @koala-prepend "page-table.js"
+// @koala-prepend "section-table-status.js"
 // @koala-prepend "page-reservation.js"
 // @koala-prepend "section-reservation-editor.js"
-// @koala-prepend "page-board-list.js"
+// @koala-prepend "page-table-list.js"
+// @koala-prepend "page-table-editor.js"
 // @koala-prepend "page-dish-editor.js"
 
 ;!function($) {

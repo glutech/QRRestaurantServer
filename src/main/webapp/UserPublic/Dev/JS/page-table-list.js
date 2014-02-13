@@ -1,10 +1,10 @@
 ;!function($) {
 
-	if($('#page-board-list').ex().empty()) return;
+	if($('#page-table-list').ex().empty()) return;
 
 	;$(function() {
 
-		var $model = $('.model-board-list')
+		var $model = $('.model-table-list')
 		  , $module = $model.find('.model-module');
 
 		$module.find('.model-no').each(function(i) {

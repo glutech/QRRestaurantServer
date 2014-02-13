@@ -1,6 +1,6 @@
 ;!function($) {
 
-	if($('#section-board-status-container').ex().empty()) return;
+	if($('#section-table-status-container').ex().empty()) return;
 	
 	;$(function() {
 
@@ -8,7 +8,7 @@
 		 * 动态调整餐桌状态面板高度
 		 */
 		;!function() {
-			$('#section-board-status-container').on('shown.bs.modal', function(e) {
+			$('#section-table-status-container').on('shown.bs.modal', function(e) {
 				var $this = $(this)
 				  , $panelGroup = $this.find('.model-container-main.panel-group').first()
 				  , $panels = $panelGroup.find('.panel');
@@ -40,7 +40,7 @@
 		 * 餐桌状态面板操作逻辑
 		 */
 		;!function() {
-			$('#section-board-status-container').on('hidden.bs.modal', function(e) {
+			$('#section-table-status-container').on('hidden.bs.modal', function(e) {
 				$(this).removeData('bs.modal').html('');
 			}).on('shown.bs.modal', function(e) {
 				var $this = $(this)

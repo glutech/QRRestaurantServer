@@ -1,10 +1,10 @@
 @charset 'utf-8';
 
 
-#page-board {
+#page-table {
 
 
-    div.model.model-board-map {
+    div.model.model-table-map {
         @box-size: 150px;
         @box-magin: 7px;
         @box-padding: unit(ceil(@box-magin * 1.618), px);
@@ -37,11 +37,11 @@
             }
         }
     }
-    div.model-board-map a.model-module {
+    div.model-table-map a.model-module {
         @box-magin: 7px;
         .style() {
             & {
-                text-decoration: none; cursor: pointer; border-radius: @box-magin * 0.618; box-shadow: 0 0 @box-magin * 0.322 fadein(@color-model-board-accent, 61.8%);
+                text-decoration: none; cursor: pointer; border-radius: @box-magin * 0.618; box-shadow: 0 0 @box-magin * 0.322 fadein(@color-model-table-accent, 61.8%);
             }
             .model-icon {
                 font-size: @font-size-h3; opacity: 0.618; color: white !important;
@@ -50,26 +50,26 @@
                 font-size: @font-size-small; font-weight: normal; line-height: 1em;
             }
             .model-name {
-                font-size: @font-size-h1; .font-heiti; font-weight: bold; line-height: 1.3em; text-shadow: @color-model-board-normal 0 0 0.618em;
+                font-size: @font-size-h1; .font-heiti; font-weight: bold; line-height: 1.3em; text-shadow: @color-model-table-normal 0 0 0.618em;
             }
             .model-status {
-                font-size: @font-size-base;  opacity: 0.92; letter-spacing: 0.1em; text-shadow: lighten(@color-model-board-accent, 30%) 0 0 0.618em;
+                font-size: @font-size-base;  opacity: 0.92; letter-spacing: 0.1em; text-shadow: lighten(@color-model-table-accent, 30%) 0 0 0.618em;
             }
             &:hover {
-                background-color: @color-model-board-accent !important;
+                background-color: @color-model-table-accent !important;
             }
         }
         .style(@category) {
-            @color_name: "color-model-board-@{category}";
+            @color_name: "color-model-table-@{category}";
             @color: @@color_name;
             & { 
                 background-color: @color; color: white; 
             }
             .model-status:after { 
-                content: ~"@{status-model-board-@{category}}"; 
+                content: ~"@{status-model-table-@{category}}"; 
             }
             .model-icon {
-                .glyphicon-model-board(@category); color: @color; 
+                .glyphicon-model-table(@category); color: @color; 
             }
             &:hover .model-notice { 
                 background-color: @color !important; color: white; 

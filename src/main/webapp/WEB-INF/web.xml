@@ -1039,6 +1039,11 @@ standard deployment descriptor.
     <servlet-name>UserVerifycodeServlet</servlet-name>
     <servlet-class>com.qrrest.servlet.user.VerifycodeServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>TableEditorServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.TableEditorServlet</servlet-class>
+  </servlet>
+
 
   
   <servlet-mapping>
@@ -1048,6 +1053,10 @@ standard deployment descriptor.
   <servlet-mapping>
     <servlet-name>UserVerifycodeServlet</servlet-name>
     <url-pattern>/User/Verifycode.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TableEditorServlet</servlet-name>
+    <url-pattern>/User/TableEditor.do</url-pattern>
   </servlet-mapping>
   
   
