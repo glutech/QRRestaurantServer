@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-13 13:56:58
+Date: 2014-02-13 14:03:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -440,7 +440,7 @@ CREATE TABLE `tables` (
   `table_status` int(1) NOT NULL,
   `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`table_id`),
-  UNIQUE KEY `name_unique` (`table_name`) USING HASH,
+  UNIQUE KEY `name_unique` (`table_name`,`rest_id`) USING BTREE,
   KEY `rest_id` (`rest_id`),
   KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
   CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
