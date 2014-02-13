@@ -4,6 +4,7 @@ public class Table {
 	private long table_id;
 	private String table_name;
 	private String table_type;
+	private int table_sort;
 	private int table_status;
 	private long rest_id;
 	
@@ -24,6 +25,12 @@ public class Table {
 	}
 	public void setTable_type(String table_type) {
 		this.table_type = table_type;
+	}
+	public int getTable_sort() {
+		return table_sort;
+	}
+	public void setTable_sort(int table_sort) {
+		this.table_sort = table_sort;
 	}
 	public int getTable_status() {
 		return table_status;

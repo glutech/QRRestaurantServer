@@ -28,8 +28,9 @@ public class TablesDao {
 			while (rs.next()) {
 				table.setTable_id(rs.getLong("table_id"));
 				table.setTable_name(rs.getString("table_name"));
-				table.setTable_status(rs.getInt("table_status"));
+				table.setTable_sort(rs.getInt("table_sort"));
 				table.setTable_type(rs.getString("table_type"));
+				table.setTable_status(rs.getInt("table_status"));
 				table.setRest_id(rs.getLong("rest_id"));
 			}
 		} catch (SQLException e) {
@@ -66,8 +67,9 @@ public class TablesDao {
 				Table table = new Table();
 				table.setTable_id(rs.getLong("table_id"));
 				table.setTable_name(rs.getString("table_name"));
-				table.setTable_status(rs.getInt("table_status"));
 				table.setTable_type(rs.getString("table_type"));
+				table.setTable_sort(rs.getInt("table_sort"));
+				table.setTable_status(rs.getInt("table_status"));
 				table.setRest_id(rs.getLong("rest_id"));
 				
 				list.add(table);
@@ -83,8 +85,8 @@ public class TablesDao {
 	 */
 	public boolean insertTable(Table table) {
 		boolean flag = false;
-		String sql = "insert into tables (table_name, table_type, table_status, rest_id) values(?, ?, ?, ?)";
-		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_status(),table.getRest_id()};
+		String sql = "insert into tables (table_name, table_type, table_sort, table_status, rest_id) values(?, ?, ?, ?, ?)";
+		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_sort(),table.getTable_status(),table.getRest_id()};
 		sqlE.execSqlWithRS(sql, params);
 		
 		return flag;
@@ -162,8 +164,8 @@ public class TablesDao {
 	 */
 	public boolean modifyTable(Table table) {
 		boolean flag = false;
-		String sql = "update tables set table_name=?, table_type=?, table_status=?, rest_id=? where table_id=?";
-		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_status(),table.getRest_id(),table.getTable_id()};
+		String sql = "update tables set table_name=?, table_type=?, table_sort=?, table_status=?, rest_id=? where table_id=?";
+		Object[] params = {table.getTable_name(),table.getTable_type(),table.getTable_sort(),table.getTable_status(),table.getRest_id(),table.getTable_id()};
 		flag = sqlE.execSqlWithoutRS(sql, params);
 		
 		return flag;

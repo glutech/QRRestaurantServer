@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-12 09:15:16
+Date: 2014-02-13 10:49:16
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -434,20 +434,22 @@ INSERT INTO `restaurants` VALUES ('4', 'Beef restaurant 4', '4 is me', '西餐',
 DROP TABLE IF EXISTS `tables`;
 CREATE TABLE `tables` (
   `table_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `table_name` varchar(256) DEFAULT NULL,
-  `table_type` varchar(128) DEFAULT NULL,
-  `table_status` int(1) DEFAULT NULL,
-  `rest_id` bigint(20) DEFAULT NULL,
+  `table_name` varchar(256) NOT NULL,
+  `table_type` varchar(128) NOT NULL,
+  `table_sort` int(1) NOT NULL,
+  `table_status` int(1) NOT NULL,
+  `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`table_id`),
   KEY `rest_id` (`rest_id`),
-  CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`)
+  KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
+  CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tables
 -- ----------------------------
-INSERT INTO `tables` VALUES ('1', 'preorder', 'baoxiang', '1', '1');
-INSERT INTO `tables` VALUES ('2', 'b2', 'baoxiang', '1', '1');
+INSERT INTO `tables` VALUES ('1', 'preorder', 'baoxiang', '0', '1', '1');
+INSERT INTO `tables` VALUES ('2', 'b2', 'baoxiang', '0', '1', '1');
 
 -- ----------------------------
 -- Table structure for users
