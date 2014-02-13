@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-13 14:03:10
+Date: 2014-02-13 15:45:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -435,7 +435,7 @@ DROP TABLE IF EXISTS `tables`;
 CREATE TABLE `tables` (
   `table_id` bigint(20) NOT NULL AUTO_INCREMENT,
   `table_name` varchar(255) NOT NULL,
-  `table_type` varchar(128) NOT NULL,
+  `table_type` varchar(128) DEFAULT NULL,
   `table_sort` int(1) NOT NULL,
   `table_status` int(1) NOT NULL,
   `rest_id` bigint(20) NOT NULL,
@@ -444,7 +444,7 @@ CREATE TABLE `tables` (
   KEY `rest_id` (`rest_id`),
   KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
   CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tables
