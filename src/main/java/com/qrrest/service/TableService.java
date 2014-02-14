@@ -54,10 +54,10 @@ public class TableService {
 		return tdao.insertTable(table);
 	}
 
-	public boolean updateTable(Table table, long r_id) {
+	public boolean updateTable(Table table) {
 		Table dbTable = tdao.getTableById(table.getTable_id());
 		// 餐厅与餐桌不匹配、餐桌未处在空闲状态时，不允许修改
-		if (dbTable.getRest_id() != r_id || dbTable.getTable_status() != 1) {
+		if (dbTable.getRest_id() != dbTable.getRest_id() || dbTable.getTable_status() != 1) {
 			return false;
 		}
 		return tdao.modifyTable(table);
