@@ -19,7 +19,7 @@ Table _sourceTable = _isActionNew ? null : new TableService().getTableById(_sour
             <div class="row">
                 <div>
                     <ol class="breadcrumb">
-                        <li><a href="./Table.jsp">餐桌</a></li>
+                        <li><a href="./Service.jsp">服务</a></li>
                         <li><a href="./TableList.jsp">餐桌管理</a></li>
                         <li class="active"><%=_actionText%></li>
                     </ol>

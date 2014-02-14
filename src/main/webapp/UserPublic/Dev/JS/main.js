@@ -10,6 +10,8 @@
 // @koala-prepend "page-table-list.js"
 // @koala-prepend "page-table-editor.js"
 // @koala-prepend "page-dish-editor.js"
+// @koala-prepend "page-category-list.js"
+// @koala-prepend "page-category-editor.js"
 
 ;!function($) {
 

@@ -62,8 +62,7 @@ public class CategoriesDao {
 		boolean flag = false;
 		String sql = "insert into categories (cat_name, rest_id) values(?, ?)";
 		Object[] params = {catname, restid};
-		sqlE.execSqlWithRS(sql, params);
-		
+		flag = sqlE.execSqlWithoutRS(sql, params);
 		return flag;
 	}
 	
@@ -79,7 +78,6 @@ public class CategoriesDao {
 		String sql = "update categories set cat_name = ? where cat_id = ?";
 		Object[] params = {catname, catid};
 		flag = sqlE.execSqlWithoutRS(sql, params);
-		
 		return flag;
 	}
 	
@@ -91,7 +89,7 @@ public class CategoriesDao {
 	 */
 	public boolean deleteCat(long catid) {
 		boolean flag = false;
-		String sql = "delete from categories where id = ?";
+		String sql = "delete from categories where cat_id = ?";
 		Object[] params = { catid };
 		if (sqlE.execSqlWithoutRS(sql, params)) {
 			flag = true;
@@ -129,7 +127,6 @@ public class CategoriesDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		System.out.println("FUCK CAT:"+ cat.getCat_id());
 		return cat;
 	}
 }
