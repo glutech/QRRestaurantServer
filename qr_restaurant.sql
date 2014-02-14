@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-13 15:45:45
+Date: 2014-02-14 11:43:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -45,17 +45,18 @@ CREATE TABLE `categories` (
   `cat_name` varchar(128) NOT NULL,
   `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`cat_id`),
+  UNIQUE KEY `cat_name` (`cat_name`,`rest_id`),
   KEY `rest_id` (`rest_id`),
   CONSTRAINT `fromRestaurantInCategories` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of categories
 -- ----------------------------
 INSERT INTO `categories` VALUES ('1', 'test_cat1', '1');
 INSERT INTO `categories` VALUES ('2', 'test_cat2', '1');
-INSERT INTO `categories` VALUES ('3', '海鲜', '2');
 INSERT INTO `categories` VALUES ('4', '川菜', '1');
+INSERT INTO `categories` VALUES ('3', '海鲜', '2');
 INSERT INTO `categories` VALUES ('5', '滇菜', '1');
 
 -- ----------------------------
@@ -183,8 +184,8 @@ CREATE TABLE `dishes` (
   PRIMARY KEY (`dish_id`),
   KEY `rest_id` (`rest_id`),
   KEY `cat_id` (`cat_id`),
-  CONSTRAINT `fromCategory` FOREIGN KEY (`cat_id`) REFERENCES `categories` (`cat_id`),
-  CONSTRAINT `fromRestaurant` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`)
+  CONSTRAINT `fromRestaurant` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON UPDATE CASCADE,
+  CONSTRAINT `fromCategory` FOREIGN KEY (`cat_id`) REFERENCES `categories` (`cat_id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -444,13 +445,15 @@ CREATE TABLE `tables` (
   KEY `rest_id` (`rest_id`),
   KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
   CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tables
 -- ----------------------------
 INSERT INTO `tables` VALUES ('1', 'preorder', 'baoxiang', '0', '1', '1');
-INSERT INTO `tables` VALUES ('2', 'b2', 'baoxiang', '0', '1', '1');
+INSERT INTO `tables` VALUES ('2', 'b2', 'baoxiang', '1', '1', '1');
+INSERT INTO `tables` VALUES ('26', 't1', null, '0', '1', '1');
+INSERT INTO `tables` VALUES ('27', 'w2', null, '0', '1', '1');
 
 -- ----------------------------
 -- Table structure for users
