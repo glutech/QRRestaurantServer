@@ -37,7 +37,7 @@ long _auth_rest_id;
     }
 }
 DishService _dService = new DishService();
-Map<String, Object> query = _dService.queryByRestAndOptionsForPading(_auth_rest_id, _currentPage, 2, _catId, _priceOrder);
+Map<String, Object> query = _dService.queryByRestAndOptionsForPading(_auth_rest_id, _currentPage, 12, _catId, _priceOrder);
 List<Dish> _dishes =  (List<Dish>)query.get("dishes");
 int _dishesCount = _dishes.size();
 _currentPage = (Integer)query.get("currentPage");
