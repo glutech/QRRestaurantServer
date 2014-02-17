@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-14 11:43:44
+Date: 2014-02-17 19:26:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -48,7 +48,7 @@ CREATE TABLE `categories` (
   UNIQUE KEY `cat_name` (`cat_name`,`rest_id`),
   KEY `rest_id` (`rest_id`),
   CONSTRAINT `fromRestaurantInCategories` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of categories
@@ -171,22 +171,23 @@ INSERT INTO `customers` VALUES ('36', '6b44c44790a326ea', '0', '6b44c44790a326ea
 DROP TABLE IF EXISTS `dishes`;
 CREATE TABLE `dishes` (
   `dish_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `dish_name` varchar(512) DEFAULT NULL,
-  `dish_desc` varchar(1024) DEFAULT NULL,
-  `dish_pic` varchar(512) DEFAULT NULL,
-  `dish_price` double DEFAULT NULL,
-  `dish_tag` varchar(1024) DEFAULT NULL,
-  `dish_status` int(1) DEFAULT NULL,
-  `dish_recommend` int(3) DEFAULT NULL,
-  `dish_ordered` int(3) DEFAULT NULL,
-  `cat_id` bigint(20) DEFAULT NULL,
-  `rest_id` bigint(20) DEFAULT NULL,
+  `dish_name` varchar(255) NOT NULL,
+  `dish_desc` varchar(1024) NOT NULL,
+  `dish_pic` varchar(512) NOT NULL,
+  `dish_price` double NOT NULL,
+  `dish_tag` varchar(1024) NOT NULL,
+  `dish_status` int(1) NOT NULL,
+  `dish_recommend` int(3) NOT NULL DEFAULT '0',
+  `dish_ordered` int(3) NOT NULL DEFAULT '0',
+  `cat_id` bigint(20) NOT NULL,
+  `rest_id` bigint(20) NOT NULL,
   PRIMARY KEY (`dish_id`),
+  UNIQUE KEY `dish_name` (`dish_name`,`rest_id`),
   KEY `rest_id` (`rest_id`),
   KEY `cat_id` (`cat_id`),
-  CONSTRAINT `fromRestaurant` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON UPDATE CASCADE,
-  CONSTRAINT `fromCategory` FOREIGN KEY (`cat_id`) REFERENCES `categories` (`cat_id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  CONSTRAINT `fromCategory` FOREIGN KEY (`cat_id`) REFERENCES `categories` (`cat_id`) ON UPDATE CASCADE,
+  CONSTRAINT `fromRestaurant` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dishes
@@ -445,7 +446,7 @@ CREATE TABLE `tables` (
   KEY `rest_id` (`rest_id`),
   KEY `sort_index_for_table_page` (`table_id`,`table_sort`) USING BTREE,
   CONSTRAINT `fromRestaurantsInTables` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tables

@@ -34,9 +34,9 @@
 
 		$.ajax({
 		    type: "POST",
-		    url: 'http://192.168.1.222:8080/QiniuTest/GetUpToken',
-		    data: {}, // TODO: login check
-		    crossDomain: true, // TEST ONLY
+		    url: 'http://localhost:8080/qr_restaurant/User/PicUploaderGateway.do',
+		    data: {}, // TODO: other data
+		    //crossDomain: true, // TEST ONLY
 		    success: function(token) {
 
 				var $form = $(

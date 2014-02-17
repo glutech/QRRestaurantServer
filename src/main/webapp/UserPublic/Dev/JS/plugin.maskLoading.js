@@ -56,7 +56,7 @@
 
     $.maskLoading.defaults = {
         text : '加载中...',
-        img : './Public/Img/loading.gif'
+        img : './../UserPublic/Img/loading.gif'
     };
 
 }(window.jQuery);

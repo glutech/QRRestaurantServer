@@ -17,6 +17,31 @@
             return;
         }
 
+        $form.exValidate({
+            rules : {
+                name : { required : true },
+                desc : { required : true },
+                category : { required : true },
+                price : { required : true, number : true, min : 0.001 },
+                tag : { required : true }
+            },
+            messages : {
+                name : '请输入菜品名称',
+                desc : '请输入菜品描述',
+                category : '请选择菜品类别',
+                price  : '请输入菜品价格',
+                tag : '请输入菜品标签'
+            },
+            submitHandler : function() {
+                // 检查图片
+                if(!$form.find('[name=pic]').val() && !$form.find('[type=file]').val()) {
+                    alert('请选择菜品图片');
+                    return false;
+                }
+                doSubmit0();
+            }
+        });
+
         
 
         var resetUploader = function() {
@@ -25,8 +50,6 @@
             $uploadValue.val('');
         };
         $uploadBtn.on('click', function() {
-            console.log('click')
-            console.log($uploadFile)
             $uploadFile.click();
         });
         $uploadFile.on('change', function(e) {
@@ -55,10 +78,13 @@
         });
 
 
+        // 存在初始数据时初始化
+        $uploadValue.val() && $uploadPreview.attr('src', $uploadValue.val());
+
 
         function doSubmit0() {
             // 验证表单
-
+            // 在exValidate内完成验证并在验证通过时调用到这里
             // 转到doSubmit1
             doSubmit1();
         }
@@ -94,24 +120,22 @@
                 url : $form.attr('action'),
                 type : $form.attr('method'),
                 data : $form.serialize(),
-                success : function() {
-                    alert('ajax form success');
-                    $form.html('创建成功');
-                    $.maskLoading('setText', '创建成功，跳转中...');
-                    // window.location = '';
+                success : function(r) {
+                    if(r['status']) {
+                        alert(r['message']);
+                        $.maskLoading('setText', '创建成功，跳转中...');
+                        window.location=r['data'];
+                    } else {
+                        alert(r['message']);
+                        $.maskLoading('hide');
+                    }
                 }, 
                 error : function() {
-                    alert('ajax form error');
-                    alert('xxx错误');
+                    alert('发生错误');
                     $.maskLoading('hide');
                 }
             })
         }
-
-        $form.on('submit', function() {
-            doSubmit0();
-            return false;
-        });
 
 	});
 

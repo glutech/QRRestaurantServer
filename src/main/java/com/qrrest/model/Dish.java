@@ -7,7 +7,7 @@ public class Dish {
 	private String dish_pic;
 	private double dish_price;
 	private String dish_tag;
-	private String dish_status;
+	private int dish_status;
 	private int dish_recommend;
 	private int dish_ordered;
 	private long cat_id;
@@ -71,11 +71,11 @@ public class Dish {
 		this.dish_tag = dish_tag;
 	}
 
-	public String getDish_status() {
+	public int getDish_status() {
 		return dish_status;
 	}
 
-	public void setDish_status(String dish_status) {
+	public void setDish_status(int dish_status) {
 		this.dish_status = dish_status;
 	}
 

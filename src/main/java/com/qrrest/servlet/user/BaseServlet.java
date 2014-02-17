@@ -1,12 +1,16 @@
 package com.qrrest.servlet.user;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
 import com.qrrest.service.UserAuthService;
 
 /**
@@ -75,6 +79,22 @@ public abstract class BaseServlet extends HttpServlet {
 						+ url + " />", "</head>", "<body>", "<h4>", msg,
 				"<br />", seconds + "秒后重定向", "</h4>", "</body>", "</html>" };
 		_response.getWriter().write(Util.stringJoin("", html));
+	}
+
+	/**
+	 * 标准ajax返回
+	 */
+	protected void ajaxReturn(boolean status, String message, Object data)
+			throws IOException {
+		_response.setHeader("Content-Type", "application/json;charset=UTF-8");
+		Map<String, Object> result = new HashMap<String, Object>();
+		result.put("status", status);
+		result.put("message", message);
+		result.put("data", data);
+		PrintWriter out = _response.getWriter();
+		out.print(new Gson().toJson(result));
+		out.flush();
+		out.close();
 	}
 
 	/**

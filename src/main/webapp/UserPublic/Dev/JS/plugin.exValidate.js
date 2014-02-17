@@ -19,7 +19,8 @@
         $this.validate($.extend({
             errorContainer : '.' + uuid + ' > .alert',
             errorLabelContainer : '.' + uuid + ' > .alert',
-            wrapper : ""
+            wrapper : "",
+            ignore  : ""
         }, options));
 
         return this;

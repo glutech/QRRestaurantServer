@@ -1,5 +1,5 @@
 <%@page import="com.qrrest.service.UserAuthService"%>
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 if(new UserAuthService(request.getSession()).isAuth()) {
     response.sendRedirect("./Main.jsp");

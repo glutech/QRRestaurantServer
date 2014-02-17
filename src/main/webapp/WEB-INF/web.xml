@@ -1028,7 +1028,7 @@ standard deployment descriptor.
     <filter-name>UserAuthFilter</filter-name>
     <url-pattern>/User/*</url-pattern>
   </filter-mapping>
-  
+
   
   
   <servlet>
@@ -1043,6 +1043,26 @@ standard deployment descriptor.
     <servlet-name>TableEditorServlet</servlet-name>
     <servlet-class>com.qrrest.servlet.user.TableEditorServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>CategoryEditorServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.CategoryEditorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PicUploaderGatewayServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.PicUploaderGatewayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PicUploaderCallbackServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.PicUploaderCallbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DishEditorServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.DishEditorServlet</servlet-class>
+  </servlet>
+
+
+
+
 
 
   
@@ -1058,13 +1078,29 @@ standard deployment descriptor.
     <servlet-name>TableEditorServlet</servlet-name>
     <url-pattern>/User/TableEditor.do</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryEditorServlet</servlet-name>
+    <url-pattern>/User/CategoryEditor.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PicUploaderGatewayServlet</servlet-name>
+    <url-pattern>/User/PicUploaderGateway.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PicUploaderCallbackServlet</servlet-name>
+    <url-pattern>/User/PicUploaderCallback.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DishEditorServlet</servlet-name>
+    <url-pattern>/User/DishEditor.do</url-pattern>
+  </servlet-mapping>
   
   
   
   
   
   <welcome-file-list>
-    <welcome-file>/User/Login.jsp</welcome-file>
+    <welcome-file>/User/_Page_Welcome_.jsp</welcome-file>
   </welcome-file-list>
   
   
