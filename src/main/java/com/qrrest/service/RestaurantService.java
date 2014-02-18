@@ -26,10 +26,22 @@ public class RestaurantService {
 		return rest;
 	}
 	
+	public Restaurant getRestById(long rest_id) {
+		return rdao.getRestById(rest_id);
+	}
+	
 	public List<Restaurant> getRestsByName(String keyword){
 		List<Restaurant> list;
 		list = rdao.getRestsByName(keyword);
 		
 		return list;
+	}
+	
+	public boolean updateRestaurant(Restaurant rest, long auth_rest_id) {
+		// 确保餐厅是当前管理员所管理的
+		if(rest.getRest_id() != auth_rest_id) {
+			return false;
+		}
+		return rdao.modifyRest(rest);
 	}
 }

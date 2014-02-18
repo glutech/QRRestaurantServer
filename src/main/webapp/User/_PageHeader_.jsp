@@ -39,10 +39,10 @@ String _activeAction = _ActionDesc_[_ActionDesc_.length-1];
                         <li<%=_activeAction.equals("服务") ? " class=\"active\"" : ""%>><a href="./Service.jsp"><span class="glyphicon glyphicon-cutlery"></span>服务</a></li>
                         <li<%=_activeAction.equals("预定") ? " class=\"active\"" : ""%>><a href="./page-reservation.html"><span class="glyphicon glyphicon-bookmark"></span>预定</a></li>
                         <li<%=_activeAction.equals("历史") ? " class=\"active\"" : ""%>><a href="#"><span class="glyphicon glyphicon-stats"></span>历史</a></li>
-                        <li class="dropdown<%=(_activeAction.equals("餐厅管理") || _activeAction.equals("餐桌管理") || _activeAction.equals("菜品管理")) ? " active" : ""%>">
+                        <li class="dropdown<%=(_activeAction.equals("餐厅信息") || _activeAction.equals("餐桌管理") || _activeAction.equals("菜品管理")) ? " active" : ""%>">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>管理<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li<%=_activeAction.equals("餐厅管理") ? " class=\"active\"" : ""%>><a href="./RestaurantInfo.jsp">餐厅管理</a>
+                                <li<%=_activeAction.equals("餐厅信息") ? " class=\"active\"" : ""%>><a href="./RestaurantInfo.jsp">餐厅信息</a>
                                 <li<%=_activeAction.equals("餐桌管理") ? " class=\"active\"" : ""%>><a href="./TableList.jsp">餐桌管理</a></li>
                                 <li<%=_activeAction.equals("菜品管理") ? " class=\"active\"" : ""%>><a href="./DishList.jsp">菜品管理</a></li>
                             </ul>

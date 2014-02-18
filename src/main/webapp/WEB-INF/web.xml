@@ -1059,6 +1059,11 @@ standard deployment descriptor.
     <servlet-name>DishEditorServlet</servlet-name>
     <servlet-class>com.qrrest.servlet.user.DishEditorServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>RestaurantEditorServlet</servlet-name>
+    <servlet-class>com.qrrest.servlet.user.RestaurantEditorServlet</servlet-class>
+  </servlet>
+
 
 
 
@@ -1093,6 +1098,10 @@ standard deployment descriptor.
   <servlet-mapping>
     <servlet-name>DishEditorServlet</servlet-name>
     <url-pattern>/User/DishEditor.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RestaurantEditorServlet</servlet-name>
+    <url-pattern>/User/RestaurantEditor.do</url-pattern>
   </servlet-mapping>
   
   

@@ -27,8 +27,10 @@ public class RestaurantsDao {
 				rest.setRest_id(rs.getLong("rest_id"));
 				rest.setRest_name(rs.getString("rest_name"));
 				rest.setRest_desc(rs.getString("rest_desc"));
+				rest.setRest_type(rs.getString("rest_type"));
 				rest.setRest_addr(rs.getString("rest_addr"));
-				
+				rest.setRest_tel(rs.getString("rest_tel"));
+				rest.setRest_upid(rs.getLong("rest_upid"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -68,9 +70,8 @@ public class RestaurantsDao {
 	public boolean insertRest(Restaurant rest) {
 		boolean flag = false;
 		String sql = "insert into restaurants (rest_name, rest_desc, rest_type, rest_addr, rest_tel, rest_upid) values(?, ?, ?, ?, ?, ?)";
-		Object[] params = {rest.getRest_name(), rest.getRest_desc(), rest.getRest_type(),rest.getRest_tel(),rest.getRest_upid()};
-		sqlE.execSqlWithRS(sql, params);
-		
+		Object[] params = {rest.getRest_name(), rest.getRest_desc(), rest.getRest_type(),rest.getRest_tel(),rest.getRest_upid()==0?null:rest.getRest_upid()};
+		flag = sqlE.execSqlWithoutRS(sql, params);
 		return flag;
 	}
 	
@@ -115,7 +116,7 @@ public class RestaurantsDao {
 	public boolean modifyRest(Restaurant rest) {
 		boolean flag = false;
 		String sql = "update restaurants set rest_name=?, rest_desc=?, rest_type=?, rest_addr=?, rest_tel=?, rest_upid=? where rest_id=?";
-		Object[] params = {rest.getRest_name(), rest.getRest_desc(), rest.getRest_type(),rest.getRest_tel(),rest.getRest_upid(),rest.getRest_id()};
+		Object[] params = {rest.getRest_name(), rest.getRest_desc(), rest.getRest_type(), rest.getRest_addr(), rest.getRest_tel(),rest.getRest_upid()==0?null:rest.getRest_upid(),rest.getRest_id()};
 		flag = sqlE.execSqlWithoutRS(sql, params);
 		
 		return flag;

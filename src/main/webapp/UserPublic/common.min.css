@@ -206,7 +206,7 @@ table {
   img {
     max-width: 100% !important;
   }
-  @page  {
+  @page {
     margin: 2cm .5cm;
   }
   p,
@@ -1578,7 +1578,6 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-
   line-height: normal;
 }
 input[type="file"] {
@@ -6729,20 +6728,20 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   background-color: #cd2a19;
   border-color: #c42818;
 }
-#page-board div.model.model-board-map ul.model-list {
+#page-table div.model.model-table-map ul.model-list {
   padding-left: 0;
   list-style: none;
   margin: 0;
   margin: -7px;
   margin-right: -14px;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item {
+#page-table div.model.model-table-map ul.model-list li.model-item {
   display: inline-block;
   vertical-align: top;
   height: 100%;
   margin: 7px;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module {
   width: 150px;
   height: 150px;
   display: flex;
@@ -6752,13 +6751,13 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   margin: 0;
   position: relative;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-icon {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-icon {
   position: absolute;
   left: 12px;
   top: 12px;
   z-index: 99;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-notice {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-notice {
   background-color: #2c3e50;
   position: absolute;
   right: -7.416px;
@@ -6767,14 +6766,14 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   height: auto;
   z-index: 99;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-notice[href]:hover,
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-notice[href]:focus {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-notice[href]:hover,
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-notice[href]:focus {
   background-color: #1a242f;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-name {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-name {
   text-align: center;
 }
-#page-board div.model.model-board-map ul.model-list li.model-item a.model-module span.model-status {
+#page-table div.model.model-table-map ul.model-list li.model-item a.model-module span.model-status {
   text-align: center;
   position: absolute;
   top: auto;
@@ -6783,111 +6782,111 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   left: 0;
   z-index: 99;
 }
-#page-board div.model-board-map a.model-module {
+#page-table div.model-table-map a.model-module {
   text-decoration: none;
   cursor: pointer;
   border-radius: 4.326px;
   box-shadow: 0 0 2.254px #2c3e50;
 }
-#page-board div.model-board-map a.model-module .model-icon {
+#page-table div.model-table-map a.model-module .model-icon {
   font-size: 24px;
   opacity: 0.618;
   color: white !important;
 }
-#page-board div.model-board-map a.model-module .model-notice {
+#page-table div.model-table-map a.model-module .model-notice {
   font-size: 12px;
   font-weight: normal;
   line-height: 1em;
 }
-#page-board div.model-board-map a.model-module .model-name {
+#page-table div.model-table-map a.model-module .model-name {
   font-size: 36px;
   font-family: "微软雅黑";
   font-weight: bold;
   line-height: 1.3em;
   text-shadow: #95a5a6 0 0 0.618em;
 }
-#page-board div.model-board-map a.model-module .model-status {
+#page-table div.model-table-map a.model-module .model-status {
   font-size: 14px;
   opacity: 0.92;
   letter-spacing: 0.1em;
   text-shadow: #698aac 0 0 0.618em;
 }
-#page-board div.model-board-map a.model-module:hover {
+#page-table div.model-table-map a.model-module:hover {
   background-color: #2c3e50 !important;
 }
-#page-board div.model-board-map a.model-module.model-module-book {
+#page-table div.model-table-map a.model-module.model-module-book {
   background-color: #18bc9c;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-book .model-status:after {
+#page-table div.model-table-map a.model-module.model-module-book .model-status:after {
   content: '预定';
 }
-#page-board div.model-board-map a.model-module.model-module-book .model-icon {
+#page-table div.model-table-map a.model-module.model-module-book .model-icon {
   color: #18bc9c;
 }
-#page-board div.model-board-map a.model-module.model-module-book .model-icon:before {
+#page-table div.model-table-map a.model-module.model-module-book .model-icon:before {
   content: "\e044";
 }
-#page-board div.model-board-map a.model-module.model-module-book:hover .model-notice {
+#page-table div.model-table-map a.model-module.model-module-book:hover .model-notice {
   background-color: #18bc9c !important;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-service {
+#page-table div.model-table-map a.model-module.model-module-service {
   background-color: #e74c3c;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-service .model-status:after {
+#page-table div.model-table-map a.model-module.model-module-service .model-status:after {
   content: '服务中';
 }
-#page-board div.model-board-map a.model-module.model-module-service .model-icon {
+#page-table div.model-table-map a.model-module.model-module-service .model-icon {
   color: #e74c3c;
 }
-#page-board div.model-board-map a.model-module.model-module-service .model-icon:before {
+#page-table div.model-table-map a.model-module.model-module-service .model-icon:before {
   content: "\e179";
 }
-#page-board div.model-board-map a.model-module.model-module-service:hover .model-notice {
+#page-table div.model-table-map a.model-module.model-module-service:hover .model-notice {
   background-color: #e74c3c !important;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-free {
+#page-table div.model-table-map a.model-module.model-module-free {
   background-color: #3498db;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-free .model-status:after {
+#page-table div.model-table-map a.model-module.model-module-free .model-status:after {
   content: '空闲';
 }
-#page-board div.model-board-map a.model-module.model-module-free .model-icon {
+#page-table div.model-table-map a.model-module.model-module-free .model-icon {
   color: #3498db;
 }
-#page-board div.model-board-map a.model-module.model-module-free .model-icon:before {
+#page-table div.model-table-map a.model-module.model-module-free .model-icon:before {
   content: "\e165";
 }
-#page-board div.model-board-map a.model-module.model-module-free:hover .model-notice {
+#page-table div.model-table-map a.model-module.model-module-free:hover .model-notice {
   background-color: #3498db !important;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-maintain {
+#page-table div.model-table-map a.model-module.model-module-maintain {
   background-color: #f39c12;
   color: white;
 }
-#page-board div.model-board-map a.model-module.model-module-maintain .model-status:after {
+#page-table div.model-table-map a.model-module.model-module-maintain .model-status:after {
   content: '维护';
 }
-#page-board div.model-board-map a.model-module.model-module-maintain .model-icon {
+#page-table div.model-table-map a.model-module.model-module-maintain .model-icon {
   color: #f39c12;
 }
-#page-board div.model-board-map a.model-module.model-module-maintain .model-icon:before {
+#page-table div.model-table-map a.model-module.model-module-maintain .model-icon:before {
   content: "\e136";
 }
-#page-board div.model-board-map a.model-module.model-module-maintain:hover .model-notice {
+#page-table div.model-table-map a.model-module.model-module-maintain:hover .model-notice {
   background-color: #f39c12 !important;
   color: white;
 }
-#section-board-status-container {
+#section-table-status-container {
   min-width: 970px;
   overflow: hidden;
 }
-#section-board-status-container div.modal-dialog {
+#section-table-status-container div.modal-dialog {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -6895,167 +6894,167 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   margin-left: -400px;
   margin-top: -300px;
 }
-#section-board-status-container div.modal-dialog,
-#section-board-status-container div.modal-dialog div.modal-content {
+#section-table-status-container div.modal-dialog,
+#section-table-status-container div.modal-dialog div.modal-content {
   width: 800px;
   height: 600px;
 }
-#section-board-status-container div.modal-dialog div.modal-content {
+#section-table-status-container div.modal-dialog div.modal-content {
   overflow: hidden;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-header {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-header {
   height: 55px;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-header * {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-header * {
   font-family: "微软雅黑";
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body {
   height: 545px;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main {
   display: inline-block;
   vertical-align: top;
   height: 100%;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-sider,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-sider {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-sider,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-sider {
   width: 25%;
   position: relative;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-sider ul.model-action,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-sider ul.model-action {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-sider ul.model-action,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-sider ul.model-action {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main {
   width: 73%;
   margin-left: 2%;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-heading a,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-heading a {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-heading a,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-heading a {
   display: block;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse {
   overflow: hidden;
   overflow-y: auto;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse dl.model-notice,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse dl.model-notice {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse dl.model-notice,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse dl.model-notice {
   width: 100%;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > td,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > td,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > th,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > th {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > td,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > td,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > th,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
 }
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > td,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > td,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > th,
-#section-board-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > th {
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > td,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > td,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-sider.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > th,
+#section-table-status-container div.modal-dialog div.modal-content div.modal-body div.model-container-main.model-container-main div.panel div.panel-collapse table.model-menu > tbody > tr:hover > th {
   background-color: #ecf0f1;
 }
-#section-board-status-container div.model-module span.model-icon {
+#section-table-status-container div.model-module span.model-icon {
   font-size: 60px;
   opacity: 0.5;
   position: absolute;
   right: -12px;
   top: -8px;
 }
-#section-board-status-container div.model-module span.model-name,
-#section-board-status-container div.model-module span.model-status {
+#section-table-status-container div.model-module span.model-name,
+#section-table-status-container div.model-module span.model-status {
   display: block;
   font-family: "微软雅黑";
 }
-#section-board-status-container div.model-module span.model-name.model-name,
-#section-board-status-container div.model-module span.model-status.model-name {
+#section-table-status-container div.model-module span.model-name.model-name,
+#section-table-status-container div.model-module span.model-status.model-name {
   font-size: 36px;
 }
-#section-board-status-container div.model-module span.model-name.model-status,
-#section-board-status-container div.model-module span.model-status.model-status {
+#section-table-status-container div.model-module span.model-name.model-status,
+#section-table-status-container div.model-module span.model-status.model-status {
   font-size: 18px;
 }
-#section-board-status-container div.model-module blockquote.model-info {
+#section-table-status-container div.model-module blockquote.model-info {
   margin-top: 5em;
 }
-#section-board-status-container div.model-module blockquote.model-info,
-#section-board-status-container div.model-module blockquote.model-info p {
+#section-table-status-container div.model-module blockquote.model-info,
+#section-table-status-container div.model-module blockquote.model-info p {
   font-size: 14px;
   line-height: 1.5em;
 }
-#section-board-status-container div.model-module ul.model-action {
+#section-table-status-container div.model-module ul.model-action {
   padding-left: 0;
   list-style: none;
   margin: 0;
   font-family: "微软雅黑";
 }
-#section-board-status-container div.model-module ul.model-action li button {
+#section-table-status-container div.model-module ul.model-action li button {
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
-#section-board-status-container div.model-module div.panel .panel-heading {
+#section-table-status-container div.model-module div.panel .panel-heading {
   padding: 5.73px 15px;
 }
-#section-board-status-container div.model-module div.panel .panel-heading a.panel-title:hover {
+#section-table-status-container div.model-module div.panel .panel-heading a.panel-title:hover {
   color: inherit;
 }
-#section-board-status-container div.model-module div.panel .panel-body {
+#section-table-status-container div.model-module div.panel .panel-body {
   border-top: none;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(1),
-#section-board-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(1) {
+#section-table-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(1),
+#section-table-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(1) {
   width: 62%;
   text-align: left;
   padding-left: 15px;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(2),
-#section-board-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(2) {
+#section-table-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(2),
+#section-table-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(2) {
   width: 19%;
   text-align: center;
   padding-left: 7.5px;
   padding-right: 7.5px;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(3),
-#section-board-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(3),
-#section-board-status-container div.model-module div.panel .panel-body.model-menu tfoot > tr > td {
+#section-table-status-container div.model-module div.panel .panel-body.model-menu thead > tr > th:nth-child(3),
+#section-table-status-container div.model-module div.panel .panel-body.model-menu tbody > tr > td:nth-child(3),
+#section-table-status-container div.model-module div.panel .panel-body.model-menu tfoot > tr > td {
   text-align: right;
   padding-right: 15px;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-notice {
+#section-table-status-container div.model-module div.panel .panel-body.model-notice {
   padding: 15px;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-notice dt {
+#section-table-status-container div.model-module div.panel .panel-body.model-notice dt {
   width: 3em;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-notice dd {
+#section-table-status-container div.model-module div.panel .panel-body.model-notice dd {
   margin-left: 5em;
 }
-#section-board-status-container div.model-module div.panel .panel-body.model-notice dt + dd + dt,
-#section-board-status-container div.model-module div.panel .panel-body.model-notice dt + dd + dt + dd {
+#section-table-status-container div.model-module div.panel .panel-body.model-notice dt + dd + dt,
+#section-table-status-container div.model-module div.panel .panel-body.model-notice dt + dd + dt + dd {
   margin-top: 9.27px;
 }
-#section-board-status-container div.model-module.model-module-book span.model-icon {
+#section-table-status-container div.model-module.model-module-book span.model-icon {
   color: #18bc9c;
 }
-#section-board-status-container div.model-module.model-module-book span.model-icon:before {
+#section-table-status-container div.model-module.model-module-book span.model-icon:before {
   content: "\e044";
 }
-#section-board-status-container div.model-module.model-module-book span.model-status:after {
+#section-table-status-container div.model-module.model-module-book span.model-status:after {
   content: '预定';
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li ~ li {
+#section-table-status-container div.model-module.model-module-book ul.model-action li ~ li {
   margin-top: 0.5em;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button {
   color: #ffffff;
   background-color: #18bc9c;
   border-color: #18bc9c;
@@ -7069,85 +7068,85 @@ fieldset[disabled] #page-login .model.model-login form .model-submit.active {
   background-repeat: repeat-x;
   border-color: #107d67;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-book ul.model-action li button {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-book ul.model-action li button {
   color: #ffffff;
   background-color: #13987e;
   border-color: #11866f;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-book ul.model-action li button {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-book ul.model-action li button {
   background-image: none;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.disabled,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button[disabled],
-fieldset[disabled] #section-board-status-container div.model-module.model-module-book ul.model-action li button,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.disabled:hover,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button[disabled]:hover,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-book ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.disabled:focus,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button[disabled]:focus,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-book ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.disabled:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button[disabled]:active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-book ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.disabled.active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button[disabled].active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-book ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.disabled,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button[disabled],
+fieldset[disabled] #section-table-status-container div.model-module.model-module-book ul.model-action li button,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.disabled:hover,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button[disabled]:hover,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-book ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.disabled:focus,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button[disabled]:focus,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-book ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.disabled:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button[disabled]:active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-book ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.disabled.active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button[disabled].active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-book ul.model-action li button.active {
   background-color: #18bc9c;
   border-color: #18bc9c;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button .badge {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button .badge {
   color: #18bc9c;
   background-color: #fff;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:focus {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:focus {
   background-color: #11866f;
   background-position: 0 -15px;
 }
-#section-board-status-container div.model-module.model-module-book ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-book ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-book ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-book ul.model-action li button.active {
   background-color: #11866f;
   border-color: #107d67;
 }
-#section-board-status-container div.model-module.model-module-book div.panel {
+#section-table-status-container div.model-module.model-module-book div.panel {
   border-color: #18bc9c;
   border-color: rgba(24, 188, 156, 0.25);
 }
-#section-board-status-container div.model-module.model-module-book div.panel > .panel-heading {
+#section-table-status-container div.model-module.model-module-book div.panel > .panel-heading {
   color: #ffffff;
   background-color: #18bc9c;
   border-color: #18bc9c;
 }
-#section-board-status-container div.model-module.model-module-book div.panel > .panel-heading + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-book div.panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #18bc9c;
 }
-#section-board-status-container div.model-module.model-module-book div.panel > .panel-footer + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-book div.panel > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #18bc9c;
 }
-#section-board-status-container div.model-module.model-module-service span.model-icon {
+#section-table-status-container div.model-module.model-module-service span.model-icon {
   color: #e74c3c;
 }
-#section-board-status-container div.model-module.model-module-service span.model-icon:before {
+#section-table-status-container div.model-module.model-module-service span.model-icon:before {
   content: "\e179";
 }
-#section-board-status-container div.model-module.model-module-service span.model-status:after {
+#section-table-status-container div.model-module.model-module-service span.model-status:after {
   content: '服务中';
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li ~ li {
+#section-table-status-container div.model-module.model-module-service ul.model-action li ~ li {
   margin-top: 0.5em;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button {
   color: #ffffff;
   background-color: #e74c3c;
   border-color: #e74c3c;
@@ -7161,85 +7160,85 @@ fieldset[disabled] #section-board-status-container div.model-module.model-module
   background-repeat: repeat-x;
   border-color: #c42818;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-service ul.model-action li button {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-service ul.model-action li button {
   color: #ffffff;
   background-color: #df2e1b;
   border-color: #cd2a19;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-service ul.model-action li button {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-service ul.model-action li button {
   background-image: none;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.disabled,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button[disabled],
-fieldset[disabled] #section-board-status-container div.model-module.model-module-service ul.model-action li button,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.disabled:hover,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button[disabled]:hover,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-service ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.disabled:focus,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button[disabled]:focus,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-service ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.disabled:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button[disabled]:active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-service ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.disabled.active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button[disabled].active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-service ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.disabled,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button[disabled],
+fieldset[disabled] #section-table-status-container div.model-module.model-module-service ul.model-action li button,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.disabled:hover,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button[disabled]:hover,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-service ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.disabled:focus,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button[disabled]:focus,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-service ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.disabled:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button[disabled]:active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-service ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.disabled.active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button[disabled].active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-service ul.model-action li button.active {
   background-color: #e74c3c;
   border-color: #e74c3c;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button .badge {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button .badge {
   color: #e74c3c;
   background-color: #fff;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:focus {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:focus {
   background-color: #cd2a19;
   background-position: 0 -15px;
 }
-#section-board-status-container div.model-module.model-module-service ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-service ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-service ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-service ul.model-action li button.active {
   background-color: #cd2a19;
   border-color: #c42818;
 }
-#section-board-status-container div.model-module.model-module-service div.panel {
+#section-table-status-container div.model-module.model-module-service div.panel {
   border-color: #e74c3c;
   border-color: rgba(231, 76, 60, 0.25);
 }
-#section-board-status-container div.model-module.model-module-service div.panel > .panel-heading {
+#section-table-status-container div.model-module.model-module-service div.panel > .panel-heading {
   color: #ffffff;
   background-color: #e74c3c;
   border-color: #e74c3c;
 }
-#section-board-status-container div.model-module.model-module-service div.panel > .panel-heading + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-service div.panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #e74c3c;
 }
-#section-board-status-container div.model-module.model-module-service div.panel > .panel-footer + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-service div.panel > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #e74c3c;
 }
-#section-board-status-container div.model-module.model-module-free span.model-icon {
+#section-table-status-container div.model-module.model-module-free span.model-icon {
   color: #3498db;
 }
-#section-board-status-container div.model-module.model-module-free span.model-icon:before {
+#section-table-status-container div.model-module.model-module-free span.model-icon:before {
   content: "\e165";
 }
-#section-board-status-container div.model-module.model-module-free span.model-status:after {
+#section-table-status-container div.model-module.model-module-free span.model-status:after {
   content: '空闲';
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li ~ li {
+#section-table-status-container div.model-module.model-module-free ul.model-action li ~ li {
   margin-top: 0.5em;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button {
   color: #ffffff;
   background-color: #3498db;
   border-color: #3498db;
@@ -7253,85 +7252,85 @@ fieldset[disabled] #section-board-status-container div.model-module.model-module
   background-repeat: repeat-x;
   border-color: #1e72aa;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-free ul.model-action li button {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-free ul.model-action li button {
   color: #ffffff;
   background-color: #2383c4;
   border-color: #2077b2;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-free ul.model-action li button {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-free ul.model-action li button {
   background-image: none;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.disabled,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button[disabled],
-fieldset[disabled] #section-board-status-container div.model-module.model-module-free ul.model-action li button,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.disabled:hover,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button[disabled]:hover,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-free ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.disabled:focus,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button[disabled]:focus,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-free ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.disabled:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button[disabled]:active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-free ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.disabled.active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button[disabled].active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-free ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.disabled,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button[disabled],
+fieldset[disabled] #section-table-status-container div.model-module.model-module-free ul.model-action li button,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.disabled:hover,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button[disabled]:hover,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-free ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.disabled:focus,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button[disabled]:focus,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-free ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.disabled:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button[disabled]:active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-free ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.disabled.active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button[disabled].active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-free ul.model-action li button.active {
   background-color: #3498db;
   border-color: #3498db;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button .badge {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button .badge {
   color: #3498db;
   background-color: #fff;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:focus {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:focus {
   background-color: #2077b2;
   background-position: 0 -15px;
 }
-#section-board-status-container div.model-module.model-module-free ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-free ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-free ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-free ul.model-action li button.active {
   background-color: #2077b2;
   border-color: #1e72aa;
 }
-#section-board-status-container div.model-module.model-module-free div.panel {
+#section-table-status-container div.model-module.model-module-free div.panel {
   border-color: #3498db;
   border-color: rgba(52, 152, 219, 0.25);
 }
-#section-board-status-container div.model-module.model-module-free div.panel > .panel-heading {
+#section-table-status-container div.model-module.model-module-free div.panel > .panel-heading {
   color: #ffffff;
   background-color: #3498db;
   border-color: #3498db;
 }
-#section-board-status-container div.model-module.model-module-free div.panel > .panel-heading + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-free div.panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #3498db;
 }
-#section-board-status-container div.model-module.model-module-free div.panel > .panel-footer + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-free div.panel > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #3498db;
 }
-#section-board-status-container div.model-module.model-module-maintain span.model-icon {
+#section-table-status-container div.model-module.model-module-maintain span.model-icon {
   color: #f39c12;
 }
-#section-board-status-container div.model-module.model-module-maintain span.model-icon:before {
+#section-table-status-container div.model-module.model-module-maintain span.model-icon:before {
   content: "\e136";
 }
-#section-board-status-container div.model-module.model-module-maintain span.model-status:after {
+#section-table-status-container div.model-module.model-module-maintain span.model-status:after {
   content: '维护';
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li ~ li {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li ~ li {
   margin-top: 0.5em;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button {
   color: #ffffff;
   background-color: #f39c12;
   border-color: #f39c12;
@@ -7345,70 +7344,70 @@ fieldset[disabled] #section-board-status-container div.model-module.model-module
   background-repeat: repeat-x;
   border-color: #b47209;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-maintain ul.model-action li button {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-maintain ul.model-action li button {
   color: #ffffff;
   background-color: #d2850b;
   border-color: #be780a;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.active,
-.open .dropdown-toggle#section-board-status-container div.model-module.model-module-maintain ul.model-action li button {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.active,
+.open .dropdown-toggle#section-table-status-container div.model-module.model-module-maintain ul.model-action li button {
   background-image: none;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.disabled,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button[disabled],
-fieldset[disabled] #section-board-status-container div.model-module.model-module-maintain ul.model-action li button,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:hover,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:hover,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:focus,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:focus,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-maintain ul.model-action li button:focus,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-maintain ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.disabled.active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button[disabled].active,
-fieldset[disabled] #section-board-status-container div.model-module.model-module-maintain ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.disabled,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button[disabled],
+fieldset[disabled] #section-table-status-container div.model-module.model-module-maintain ul.model-action li button,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:hover,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:hover,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:focus,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:focus,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-maintain ul.model-action li button:focus,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.disabled:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button[disabled]:active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-maintain ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.disabled.active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button[disabled].active,
+fieldset[disabled] #section-table-status-container div.model-module.model-module-maintain ul.model-action li button.active {
   background-color: #f39c12;
   border-color: #f39c12;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button .badge {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button .badge {
   color: #f39c12;
   background-color: #fff;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:focus {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:hover,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:focus {
   background-color: #be780a;
   background-position: 0 -15px;
 }
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button:active,
-#section-board-status-container div.model-module.model-module-maintain ul.model-action li button.active {
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button:active,
+#section-table-status-container div.model-module.model-module-maintain ul.model-action li button.active {
   background-color: #be780a;
   border-color: #b47209;
 }
-#section-board-status-container div.model-module.model-module-maintain div.panel {
+#section-table-status-container div.model-module.model-module-maintain div.panel {
   border-color: #f39c12;
   border-color: rgba(243, 156, 18, 0.25);
 }
-#section-board-status-container div.model-module.model-module-maintain div.panel > .panel-heading {
+#section-table-status-container div.model-module.model-module-maintain div.panel > .panel-heading {
   color: #ffffff;
   background-color: #f39c12;
   border-color: #f39c12;
 }
-#section-board-status-container div.model-module.model-module-maintain div.panel > .panel-heading + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-maintain div.panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #f39c12;
 }
-#section-board-status-container div.model-module.model-module-maintain div.panel > .panel-footer + .panel-collapse .panel-body {
+#section-table-status-container div.model-module.model-module-maintain div.panel > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #f39c12;
 }
 #page-reservation .model.model-reservation .model-header {
@@ -7739,92 +7738,335 @@ fieldset[disabled] #section-reservation-editor-container div.modal-dialog div.mo
 #section-reservation-editor-container div.modal-dialog div.modal-content form input[type=time] -webkit-calendar-picker-indicator {
   background: orange;
 }
-#page-board-list .model.model-board-list > .model-container-left table {
+#page-restaurant-info .model.model-restaurant-info .panel {
+  border-color: #ecf0f1;
+  padding: 30px 30px;
+  margin-bottom: 0;
+}
+#page-restaurant-info .model.model-restaurant-info .panel > .panel-heading {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+#page-restaurant-info .model.model-restaurant-info .panel > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #ecf0f1;
+}
+#page-restaurant-info .model.model-restaurant-info .panel > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #ecf0f1;
+}
+#page-restaurant-info .model.model-restaurant-info .panel form {
+  font-size: 14px;
+}
+#page-restaurant-info .model-container-right a.btn {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #e74c3c 0%, #cd2a19 100%);
+  background-image: linear-gradient(to bottom, #e74c3c 0%, #cd2a19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe74c3c', endColorstr='#ffcd2a19', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #c42818;
+}
+#page-restaurant-info .model-container-right a.btn:hover,
+#page-restaurant-info .model-container-right a.btn:focus,
+#page-restaurant-info .model-container-right a.btn:active,
+#page-restaurant-info .model-container-right a.btn.active,
+.open .dropdown-toggle#page-restaurant-info .model-container-right a.btn {
+  color: #ffffff;
+  background-color: #df2e1b;
+  border-color: #cd2a19;
+}
+#page-restaurant-info .model-container-right a.btn:active,
+#page-restaurant-info .model-container-right a.btn.active,
+.open .dropdown-toggle#page-restaurant-info .model-container-right a.btn {
+  background-image: none;
+}
+#page-restaurant-info .model-container-right a.btn.disabled,
+#page-restaurant-info .model-container-right a.btn[disabled],
+fieldset[disabled] #page-restaurant-info .model-container-right a.btn,
+#page-restaurant-info .model-container-right a.btn.disabled:hover,
+#page-restaurant-info .model-container-right a.btn[disabled]:hover,
+fieldset[disabled] #page-restaurant-info .model-container-right a.btn:hover,
+#page-restaurant-info .model-container-right a.btn.disabled:focus,
+#page-restaurant-info .model-container-right a.btn[disabled]:focus,
+fieldset[disabled] #page-restaurant-info .model-container-right a.btn:focus,
+#page-restaurant-info .model-container-right a.btn.disabled:active,
+#page-restaurant-info .model-container-right a.btn[disabled]:active,
+fieldset[disabled] #page-restaurant-info .model-container-right a.btn:active,
+#page-restaurant-info .model-container-right a.btn.disabled.active,
+#page-restaurant-info .model-container-right a.btn[disabled].active,
+fieldset[disabled] #page-restaurant-info .model-container-right a.btn.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+#page-restaurant-info .model-container-right a.btn .badge {
+  color: #e74c3c;
+  background-color: #fff;
+}
+#page-restaurant-info .model-container-right a.btn:active,
+#page-restaurant-info .model-container-right a.btn.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-restaurant-info .model-container-right a.btn:hover,
+#page-restaurant-info .model-container-right a.btn:focus {
+  background-color: #cd2a19;
+  background-position: 0 -15px;
+}
+#page-restaurant-info .model-container-right a.btn:active,
+#page-restaurant-info .model-container-right a.btn.active {
+  background-color: #cd2a19;
+  border-color: #c42818;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel {
+  border-color: #ecf0f1;
+  padding: 30px 45px;
+  margin-bottom: 0;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel > .panel-heading {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #ecf0f1;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #ecf0f1;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form {
+  font-size: 14px;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .control-label {
+  font-weight: normal;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #e74c3c 0%, #cd2a19 100%);
+  background-image: linear-gradient(to bottom, #e74c3c 0%, #cd2a19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe74c3c', endColorstr='#ffcd2a19', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #c42818;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit {
+  color: #ffffff;
+  background-color: #df2e1b;
+  border-color: #cd2a19;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit {
+  background-image: none;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.disabled,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit[disabled],
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.disabled:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit[disabled]:hover,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.disabled:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit[disabled]:focus,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.disabled:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit[disabled]:active,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.disabled.active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit[disabled].active,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit .badge {
+  color: #e74c3c;
+  background-color: #fff;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:focus {
+  background-color: #cd2a19;
+  background-position: 0 -15px;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-submit.active {
+  background-color: #cd2a19;
+  border-color: #c42818;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back {
+  color: #ffffff;
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #95a5a6 0%, #74898a 100%);
+  background-image: linear-gradient(to bottom, #95a5a6 0%, #74898a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff95a5a6', endColorstr='#ff74898a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #6f8384;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #ccc;
+  text-shadow: none;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back {
+  color: #ffffff;
+  background-color: #7f9293;
+  border-color: #74898a;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back {
+  background-image: none;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.disabled,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back[disabled],
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.disabled:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back[disabled]:hover,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.disabled:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back[disabled]:focus,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:focus,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.disabled:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back[disabled]:active,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.disabled.active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back[disabled].active,
+fieldset[disabled] #page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.active {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back .badge {
+  color: #95a5a6;
+  background-color: #fff;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:hover,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:focus {
+  background-color: #74898a;
+  background-position: 0 -15px;
+}
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back:active,
+#page-restaurant-editor .model.model-restaurant-editor .panel form .model-btn-back.active {
+  background-color: #74898a;
+  border-color: #6f8384;
+}
+#page-table-list .model.model-table-list > .model-container-left table {
   border: 1px solid #ecf0f1;
   margin-bottom: 0;
 }
-#page-board-list .model.model-board-list > .model-container-left table > thead > tr > th,
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr > th,
-#page-board-list .model.model-board-list > .model-container-left table > tfoot > tr > th,
-#page-board-list .model.model-board-list > .model-container-left table > thead > tr > td,
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr > td,
-#page-board-list .model.model-board-list > .model-container-left table > tfoot > tr > td {
+#page-table-list .model.model-table-list > .model-container-left table > thead > tr > th,
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr > th,
+#page-table-list .model.model-table-list > .model-container-left table > tfoot > tr > th,
+#page-table-list .model.model-table-list > .model-container-left table > thead > tr > td,
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr > td,
+#page-table-list .model.model-table-list > .model-container-left table > tfoot > tr > td {
   border: 1px solid #ecf0f1;
 }
-#page-board-list .model.model-board-list > .model-container-left table > thead > tr > th,
-#page-board-list .model.model-board-list > .model-container-left table > thead > tr > td {
+#page-table-list .model.model-table-list > .model-container-left table > thead > tr > th,
+#page-table-list .model.model-table-list > .model-container-left table > thead > tr > td {
   border-bottom-width: 2px;
 }
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr:hover > td,
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr:hover > th {
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr:hover > td,
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr:hover > th {
   background-color: #ecf0f1;
 }
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr:nth-child(odd) > td,
-#page-board-list .model.model-board-list > .model-container-left table > tbody > tr:nth-child(odd) > th {
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr:nth-child(odd) > td,
+#page-table-list .model.model-table-list > .model-container-left table > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
 }
-#page-board-list .model.model-board-list > .model-container-left table * {
+#page-table-list .model.model-table-list > .model-container-left table * {
   text-align: center;
 }
-#page-board-list .model.model-board-list > .model-container-left table thead th {
+#page-table-list .model.model-table-list > .model-container-left table thead th {
   font-family: "微软雅黑";
 }
-#page-board-list .model.model-board-list > .model-container-left table thead > tr > th:nth-child(2),
-#page-board-list .model.model-board-list > .model-container-left table tbody > tr > td:nth-child(2) {
+#page-table-list .model.model-table-list > .model-container-left table thead > tr > th:nth-child(2),
+#page-table-list .model.model-table-list > .model-container-left table tbody > tr > td:nth-child(2) {
   text-align: left;
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-#page-board-list .model.model-board-list > .model-container-left table thead > tr > th:nth-child(1) {
+#page-table-list .model.model-table-list > .model-container-left table thead > tr > th:nth-child(1) {
   width: 8%;
 }
-#page-board-list .model.model-board-list > .model-container-left table thead > tr > th:nth-child(3) {
+#page-table-list .model.model-table-list > .model-container-left table thead > tr > th:nth-child(3) {
   width: 15%;
 }
-#page-board-list .model.model-board-list > .model-container-left table thead > tr > th:nth-child(4) {
+#page-table-list .model.model-table-list > .model-container-left table thead > tr > th:nth-child(4) {
   width: 15%;
 }
-#page-board-list .model.model-board-list > .model-container-left table thead > tr > th:nth-child(5) {
+#page-table-list .model.model-table-list > .model-container-left table thead > tr > th:nth-child(5) {
   width: 15%;
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module .model-action {
+#page-table-list .model.model-table-list > .model-container-left .model-module .model-action {
   padding-left: 0;
   list-style: none;
   margin: 0;
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module .model-action > li {
+#page-table-list .model.model-table-list > .model-container-left .model-module .model-action > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module .model-action > li:first-child {
+#page-table-list .model.model-table-list > .model-container-left .model-module .model-action > li:first-child {
   padding-left: 0;
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-book .model-status {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-book .model-status {
   color: rgba(24, 188, 156, 0.85);
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-book .model-status:after {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-book .model-status:after {
   content: '预定';
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-service .model-status {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-service .model-status {
   color: rgba(231, 76, 60, 0.85);
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-service .model-status:after {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-service .model-status:after {
   content: '服务中';
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-free .model-status {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-free .model-status {
   color: rgba(52, 152, 219, 0.85);
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-free .model-status:after {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-free .model-status:after {
   content: '空闲';
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-maintain .model-status {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-maintain .model-status {
   color: rgba(243, 156, 18, 0.85);
 }
-#page-board-list .model.model-board-list > .model-container-left .model-module.model-module-maintain .model-status:after {
+#page-table-list .model.model-table-list > .model-container-left .model-module.model-module-maintain .model-status:after {
   content: '维护';
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn {
+#page-table-list .model.model-table-list > .model-container-right a.btn {
   color: #ffffff;
   background-color: #e74c3c;
   border-color: #e74c3c;
@@ -7842,80 +8084,80 @@ fieldset[disabled] #section-reservation-editor-container div.modal-dialog div.mo
   padding-left: 0;
   padding-right: 0;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn:hover,
-#page-board-list .model.model-board-list > .model-container-right a.btn:focus,
-#page-board-list .model.model-board-list > .model-container-right a.btn:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn.active,
-.open .dropdown-toggle#page-board-list .model.model-board-list > .model-container-right a.btn {
+#page-table-list .model.model-table-list > .model-container-right a.btn:hover,
+#page-table-list .model.model-table-list > .model-container-right a.btn:focus,
+#page-table-list .model.model-table-list > .model-container-right a.btn:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn.active,
+.open .dropdown-toggle#page-table-list .model.model-table-list > .model-container-right a.btn {
   color: #ffffff;
   background-color: #df2e1b;
   border-color: #cd2a19;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn.active,
-.open .dropdown-toggle#page-board-list .model.model-board-list > .model-container-right a.btn {
+#page-table-list .model.model-table-list > .model-container-right a.btn:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn.active,
+.open .dropdown-toggle#page-table-list .model.model-table-list > .model-container-right a.btn {
   background-image: none;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn.disabled,
-#page-board-list .model.model-board-list > .model-container-right a.btn[disabled],
-fieldset[disabled] #page-board-list .model.model-board-list > .model-container-right a.btn,
-#page-board-list .model.model-board-list > .model-container-right a.btn.disabled:hover,
-#page-board-list .model.model-board-list > .model-container-right a.btn[disabled]:hover,
-fieldset[disabled] #page-board-list .model.model-board-list > .model-container-right a.btn:hover,
-#page-board-list .model.model-board-list > .model-container-right a.btn.disabled:focus,
-#page-board-list .model.model-board-list > .model-container-right a.btn[disabled]:focus,
-fieldset[disabled] #page-board-list .model.model-board-list > .model-container-right a.btn:focus,
-#page-board-list .model.model-board-list > .model-container-right a.btn.disabled:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn[disabled]:active,
-fieldset[disabled] #page-board-list .model.model-board-list > .model-container-right a.btn:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn.disabled.active,
-#page-board-list .model.model-board-list > .model-container-right a.btn[disabled].active,
-fieldset[disabled] #page-board-list .model.model-board-list > .model-container-right a.btn.active {
+#page-table-list .model.model-table-list > .model-container-right a.btn.disabled,
+#page-table-list .model.model-table-list > .model-container-right a.btn[disabled],
+fieldset[disabled] #page-table-list .model.model-table-list > .model-container-right a.btn,
+#page-table-list .model.model-table-list > .model-container-right a.btn.disabled:hover,
+#page-table-list .model.model-table-list > .model-container-right a.btn[disabled]:hover,
+fieldset[disabled] #page-table-list .model.model-table-list > .model-container-right a.btn:hover,
+#page-table-list .model.model-table-list > .model-container-right a.btn.disabled:focus,
+#page-table-list .model.model-table-list > .model-container-right a.btn[disabled]:focus,
+fieldset[disabled] #page-table-list .model.model-table-list > .model-container-right a.btn:focus,
+#page-table-list .model.model-table-list > .model-container-right a.btn.disabled:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn[disabled]:active,
+fieldset[disabled] #page-table-list .model.model-table-list > .model-container-right a.btn:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn.disabled.active,
+#page-table-list .model.model-table-list > .model-container-right a.btn[disabled].active,
+fieldset[disabled] #page-table-list .model.model-table-list > .model-container-right a.btn.active {
   background-color: #e74c3c;
   border-color: #e74c3c;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn .badge {
+#page-table-list .model.model-table-list > .model-container-right a.btn .badge {
   color: #e74c3c;
   background-color: #fff;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn.active {
+#page-table-list .model.model-table-list > .model-container-right a.btn:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn:hover,
-#page-board-list .model.model-board-list > .model-container-right a.btn:focus {
+#page-table-list .model.model-table-list > .model-container-right a.btn:hover,
+#page-table-list .model.model-table-list > .model-container-right a.btn:focus {
   background-color: #cd2a19;
   background-position: 0 -15px;
 }
-#page-board-list .model.model-board-list > .model-container-right a.btn:active,
-#page-board-list .model.model-board-list > .model-container-right a.btn.active {
+#page-table-list .model.model-table-list > .model-container-right a.btn:active,
+#page-table-list .model.model-table-list > .model-container-right a.btn.active {
   background-color: #cd2a19;
   border-color: #c42818;
 }
-#page-board-editor .model.model-board-editor .panel {
+#page-table-editor .model.model-table-editor .panel {
   border-color: #ecf0f1;
   padding: 30px 45px;
   margin-bottom: 0;
 }
-#page-board-editor .model.model-board-editor .panel > .panel-heading {
+#page-table-editor .model.model-table-editor .panel > .panel-heading {
   color: #2c3e50;
   background-color: #ecf0f1;
   border-color: #ecf0f1;
 }
-#page-board-editor .model.model-board-editor .panel > .panel-heading + .panel-collapse .panel-body {
+#page-table-editor .model.model-table-editor .panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: #ecf0f1;
 }
-#page-board-editor .model.model-board-editor .panel > .panel-footer + .panel-collapse .panel-body {
+#page-table-editor .model.model-table-editor .panel > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #ecf0f1;
 }
-#page-board-editor .model.model-board-editor .panel form {
+#page-table-editor .model.model-table-editor .panel form {
   font-size: 14px;
 }
-#page-board-editor .model.model-board-editor .panel form .control-label {
+#page-table-editor .model.model-table-editor .panel form .control-label {
   font-weight: normal;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit {
   color: #ffffff;
   background-color: #e74c3c;
   border-color: #e74c3c;
@@ -7929,58 +8171,58 @@ fieldset[disabled] #page-board-list .model.model-board-list > .model-container-r
   background-repeat: repeat-x;
   border-color: #c42818;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.active,
-.open .dropdown-toggle#page-board-editor .model.model-board-editor .panel form .model-btn-submit {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-table-editor .model.model-table-editor .panel form .model-btn-submit {
   color: #ffffff;
   background-color: #df2e1b;
   border-color: #cd2a19;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.active,
-.open .dropdown-toggle#page-board-editor .model.model-board-editor .panel form .model-btn-submit {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-table-editor .model.model-table-editor .panel form .model-btn-submit {
   background-image: none;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.disabled,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit[disabled],
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-submit,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.disabled:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit[disabled]:hover,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-submit:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.disabled:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit[disabled]:focus,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-submit:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.disabled:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit[disabled]:active,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-submit:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.disabled.active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit[disabled].active,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-submit.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.disabled,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit[disabled],
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-submit,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.disabled:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit[disabled]:hover,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-submit:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.disabled:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit[disabled]:focus,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-submit:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.disabled:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit[disabled]:active,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-submit:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.disabled.active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit[disabled].active,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-submit.active {
   background-color: #e74c3c;
   border-color: #e74c3c;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit .badge {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit .badge {
   color: #e74c3c;
   background-color: #fff;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:focus {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:focus {
   background-color: #cd2a19;
   background-position: 0 -15px;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-submit.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-submit.active {
   background-color: #cd2a19;
   border-color: #c42818;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back {
   color: #ffffff;
   background-color: #95a5a6;
   border-color: #95a5a6;
@@ -7997,54 +8239,54 @@ fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .mod
   border-color: #ccc;
   text-shadow: none;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.active,
-.open .dropdown-toggle#page-board-editor .model.model-board-editor .panel form .model-btn-back {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-table-editor .model.model-table-editor .panel form .model-btn-back {
   color: #ffffff;
   background-color: #7f9293;
   border-color: #74898a;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.active,
-.open .dropdown-toggle#page-board-editor .model.model-board-editor .panel form .model-btn-back {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-table-editor .model.model-table-editor .panel form .model-btn-back {
   background-image: none;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.disabled,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back[disabled],
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-back,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.disabled:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back[disabled]:hover,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-back:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.disabled:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back[disabled]:focus,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-back:focus,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.disabled:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back[disabled]:active,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-back:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.disabled.active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back[disabled].active,
-fieldset[disabled] #page-board-editor .model.model-board-editor .panel form .model-btn-back.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.disabled,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back[disabled],
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-back,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.disabled:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back[disabled]:hover,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-back:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.disabled:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back[disabled]:focus,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-back:focus,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.disabled:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back[disabled]:active,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-back:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.disabled.active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back[disabled].active,
+fieldset[disabled] #page-table-editor .model.model-table-editor .panel form .model-btn-back.active {
   background-color: #95a5a6;
   border-color: #95a5a6;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back .badge {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back .badge {
   color: #95a5a6;
   background-color: #fff;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:hover,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:focus {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:hover,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:focus {
   background-color: #74898a;
   background-position: 0 -15px;
 }
-#page-board-editor .model.model-board-editor .panel form .model-btn-back:active,
-#page-board-editor .model.model-board-editor .panel form .model-btn-back.active {
+#page-table-editor .model.model-table-editor .panel form .model-btn-back:active,
+#page-table-editor .model.model-table-editor .panel form .model-btn-back.active {
   background-color: #74898a;
   border-color: #6f8384;
 }
@@ -8345,4 +8587,283 @@ fieldset[disabled] #page-dish-editor .model.model-dish-editor .panel form .model
 #page-dish-editor .model.model-dish-editor .panel form .model-upload img {
   max-width: 100%;
   height: auto;
+}
+#page-category-list .model.model-category-list > .model-container-left table {
+  border: 1px solid #ecf0f1;
+  margin-bottom: 0;
+}
+#page-category-list .model.model-category-list > .model-container-left table > thead > tr > th,
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr > th,
+#page-category-list .model.model-category-list > .model-container-left table > tfoot > tr > th,
+#page-category-list .model.model-category-list > .model-container-left table > thead > tr > td,
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr > td,
+#page-category-list .model.model-category-list > .model-container-left table > tfoot > tr > td {
+  border: 1px solid #ecf0f1;
+}
+#page-category-list .model.model-category-list > .model-container-left table > thead > tr > th,
+#page-category-list .model.model-category-list > .model-container-left table > thead > tr > td {
+  border-bottom-width: 2px;
+}
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr:hover > td,
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr:hover > th {
+  background-color: #ecf0f1;
+}
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr:nth-child(odd) > td,
+#page-category-list .model.model-category-list > .model-container-left table > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+#page-category-list .model.model-category-list > .model-container-left table * {
+  text-align: center;
+}
+#page-category-list .model.model-category-list > .model-container-left table thead th {
+  font-family: "微软雅黑";
+}
+#page-category-list .model.model-category-list > .model-container-left table thead > tr > th:nth-child(2),
+#page-category-list .model.model-category-list > .model-container-left table tbody > tr > td:nth-child(2) {
+  text-align: left;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+#page-category-list .model.model-category-list > .model-container-left table thead > tr > th:nth-child(1) {
+  width: 8%;
+}
+#page-category-list .model.model-category-list > .model-container-left table thead > tr > th:nth-child(3) {
+  width: 15%;
+}
+#page-category-list .model.model-category-list > .model-container-left .model-module .model-action {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+#page-category-list .model.model-category-list > .model-container-left .model-module .model-action > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#page-category-list .model.model-category-list > .model-container-left .model-module .model-action > li:first-child {
+  padding-left: 0;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #e74c3c 0%, #cd2a19 100%);
+  background-image: linear-gradient(to bottom, #e74c3c 0%, #cd2a19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe74c3c', endColorstr='#ffcd2a19', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #c42818;
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn:hover,
+#page-category-list .model.model-category-list > .model-container-right a.btn:focus,
+#page-category-list .model.model-category-list > .model-container-right a.btn:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn.active,
+.open .dropdown-toggle#page-category-list .model.model-category-list > .model-container-right a.btn {
+  color: #ffffff;
+  background-color: #df2e1b;
+  border-color: #cd2a19;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn.active,
+.open .dropdown-toggle#page-category-list .model.model-category-list > .model-container-right a.btn {
+  background-image: none;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn.disabled,
+#page-category-list .model.model-category-list > .model-container-right a.btn[disabled],
+fieldset[disabled] #page-category-list .model.model-category-list > .model-container-right a.btn,
+#page-category-list .model.model-category-list > .model-container-right a.btn.disabled:hover,
+#page-category-list .model.model-category-list > .model-container-right a.btn[disabled]:hover,
+fieldset[disabled] #page-category-list .model.model-category-list > .model-container-right a.btn:hover,
+#page-category-list .model.model-category-list > .model-container-right a.btn.disabled:focus,
+#page-category-list .model.model-category-list > .model-container-right a.btn[disabled]:focus,
+fieldset[disabled] #page-category-list .model.model-category-list > .model-container-right a.btn:focus,
+#page-category-list .model.model-category-list > .model-container-right a.btn.disabled:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn[disabled]:active,
+fieldset[disabled] #page-category-list .model.model-category-list > .model-container-right a.btn:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn.disabled.active,
+#page-category-list .model.model-category-list > .model-container-right a.btn[disabled].active,
+fieldset[disabled] #page-category-list .model.model-category-list > .model-container-right a.btn.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn .badge {
+  color: #e74c3c;
+  background-color: #fff;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn:hover,
+#page-category-list .model.model-category-list > .model-container-right a.btn:focus {
+  background-color: #cd2a19;
+  background-position: 0 -15px;
+}
+#page-category-list .model.model-category-list > .model-container-right a.btn:active,
+#page-category-list .model.model-category-list > .model-container-right a.btn.active {
+  background-color: #cd2a19;
+  border-color: #c42818;
+}
+#page-category-editor .model.model-category-editor .panel {
+  border-color: #ecf0f1;
+  padding: 30px 45px;
+  margin-bottom: 0;
+}
+#page-category-editor .model.model-category-editor .panel > .panel-heading {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+#page-category-editor .model.model-category-editor .panel > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #ecf0f1;
+}
+#page-category-editor .model.model-category-editor .panel > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #ecf0f1;
+}
+#page-category-editor .model.model-category-editor .panel form {
+  font-size: 14px;
+}
+#page-category-editor .model.model-category-editor .panel form .control-label {
+  font-weight: normal;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #e74c3c 0%, #cd2a19 100%);
+  background-image: linear-gradient(to bottom, #e74c3c 0%, #cd2a19 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe74c3c', endColorstr='#ffcd2a19', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #c42818;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-category-editor .model.model-category-editor .panel form .model-btn-submit {
+  color: #ffffff;
+  background-color: #df2e1b;
+  border-color: #cd2a19;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.active,
+.open .dropdown-toggle#page-category-editor .model.model-category-editor .panel form .model-btn-submit {
+  background-image: none;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.disabled,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit[disabled],
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-submit,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.disabled:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit[disabled]:hover,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-submit:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.disabled:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit[disabled]:focus,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-submit:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.disabled:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit[disabled]:active,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-submit:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.disabled.active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit[disabled].active,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-submit.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit .badge {
+  color: #e74c3c;
+  background-color: #fff;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:focus {
+  background-color: #cd2a19;
+  background-position: 0 -15px;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-submit.active {
+  background-color: #cd2a19;
+  border-color: #c42818;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back {
+  color: #ffffff;
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-image: -webkit-linear-gradient(top, #95a5a6 0%, #74898a 100%);
+  background-image: linear-gradient(to bottom, #95a5a6 0%, #74898a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff95a5a6', endColorstr='#ff74898a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #6f8384;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #ccc;
+  text-shadow: none;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-category-editor .model.model-category-editor .panel form .model-btn-back {
+  color: #ffffff;
+  background-color: #7f9293;
+  border-color: #74898a;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.active,
+.open .dropdown-toggle#page-category-editor .model.model-category-editor .panel form .model-btn-back {
+  background-image: none;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.disabled,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back[disabled],
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-back,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.disabled:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back[disabled]:hover,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-back:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.disabled:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back[disabled]:focus,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-back:focus,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.disabled:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back[disabled]:active,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-back:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.disabled.active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back[disabled].active,
+fieldset[disabled] #page-category-editor .model.model-category-editor .panel form .model-btn-back.active {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back .badge {
+  color: #95a5a6;
+  background-color: #fff;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:hover,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:focus {
+  background-color: #74898a;
+  background-position: 0 -15px;
+}
+#page-category-editor .model.model-category-editor .panel form .model-btn-back:active,
+#page-category-editor .model.model-category-editor .panel form .model-btn-back.active {
+  background-color: #74898a;
+  border-color: #6f8384;
 }

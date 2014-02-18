@@ -7,6 +7,7 @@
 // @koala-prepend "section-table-status.js"
 // @koala-prepend "page-reservation.js"
 // @koala-prepend "section-reservation-editor.js"
+// @koala-prepend "page-restaurant-editor.js"
 // @koala-prepend "page-table-list.js"
 // @koala-prepend "page-table-editor.js"
 // @koala-prepend "page-dish-editor.js"
