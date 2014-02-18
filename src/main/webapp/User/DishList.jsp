@@ -106,7 +106,8 @@ int _totalPages = (Integer)query.get("totalPages");
                         <small>包括查找、新增、修改、删除等操作</small>
                         <small>可以按条件对菜品进行筛选和排序操作</small>
                     </blockquote>
-                    <a class="btn" href="./DishEditor.jsp" role="button">新增菜品</a>
+                    <p><a class="btn" href="./DishEditor.jsp" role="button">新增菜品</a></p>
+                    <p><a class="btn" href="./CategoryList.jsp" role="button">菜品分类管理</a></p>
                     <div class="panel">
                         <div class="panel-heading"><h4 class="panel-title">筛选排序</h4></div>
                         <div class="panel-body">

@@ -44,4 +44,8 @@ public class RestaurantService {
 		}
 		return rdao.modifyRest(rest);
 	}
+	
+	public String getRestName(long rest_id) {
+		return rdao.getRestName(rest_id);
+	}
 }

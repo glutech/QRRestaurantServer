@@ -25,25 +25,25 @@ public class CategoryService {
 		return cdao.getCatById(cat_id);
 	}
 
-	public boolean insertCategory(Category category, long rest_id) {
-		if (category.getRest_id() != rest_id) {
+	public boolean insertCategory(Category category, long auth_rest_id) {
+		if (category.getRest_id() != auth_rest_id) {
 			return false;
 		}
 		return cdao.insertCat(category.getCat_name(), category.getRest_id());
 	}
 
-	public boolean updateCategory(Category category) {
+	public boolean updateCategory(Category category, long auth_rest_id) {
 		Category dbCat = cdao.getCatById(category.getCat_id());
-		if (dbCat.getCat_id() != category.getCat_id()
-				|| dbCat.getRest_id() != category.getRest_id()) {
+		if (dbCat.getCat_id() == 0
+				|| (category.getRest_id() != auth_rest_id || dbCat.getRest_id() != auth_rest_id)) {
 			return false;
 		}
 		return cdao.modifyCat(category.getCat_name(), category.getCat_id());
 	}
 
-	public boolean deleteCategory(long cat_id, long rest_id) {
+	public boolean deleteCategory(long cat_id, long auth_rest_id) {
 		Category dbCat = cdao.getCatById(cat_id);
-		if (dbCat.getCat_id() != cat_id || dbCat.getRest_id() != rest_id) {
+		if (dbCat.getCat_id() == 0 || dbCat.getRest_id() != auth_rest_id) {
 			return false;
 		}
 		return cdao.deleteCat(cat_id);

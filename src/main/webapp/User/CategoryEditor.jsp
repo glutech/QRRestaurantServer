@@ -1,6 +1,6 @@
 <%@page import="com.qrrest.service.CategoryService"%>
 <%@page import="com.qrrest.model.Category"%>
-<%@page import="com.qrrest.model.Table"%>
+<%@page import="com.qrrest.service.UserAuthService"%>
 <%@page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 
 <%
@@ -8,6 +8,11 @@ String _sourceId = request.getParameter("id");
 boolean _isActionNew = _sourceId == null;
 String _actionText = _isActionNew ? "新增分类" : "编辑分类";
 Category _sourceCategory = _isActionNew ? null : new CategoryService().getCatByCatId(Long.parseLong(_sourceId));
+long _auth_rest_id = new UserAuthService(request.getSession()).getRestId();
+if(_sourceCategory != null && (_sourceCategory.getCat_id() == 0 || _sourceCategory.getRest_id() != _auth_rest_id)) {
+    response.setStatus(500);
+    return;
+}
 %>
 
 <% String _ActionDesc_ = _actionText + ";" + "菜品分类管理" + ";" + "菜品管理"; %>

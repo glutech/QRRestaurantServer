@@ -167,4 +167,16 @@ public class RestaurantsDao {
 		}
 		return list;
 	}
+	
+	public String getRestName(long rest_id) {
+		ResultSet rs = sqlE.execSqlWithRS("select rest_name from restaurants where rest_id = ?", new Object[]{rest_id});
+		try {
+			if(rs.next()) {
+				return rs.getString(1);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
 }

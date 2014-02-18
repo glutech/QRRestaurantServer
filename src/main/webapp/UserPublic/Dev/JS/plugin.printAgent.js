@@ -17,7 +17,7 @@
     	//host : '192.168.23.130',
     	//host : '127.0.0.1',
         host : '192.168.1.102'
-    }
+    };
     QRRestaurantPrintAgent.prototype = {
 
         _init : function() { 
@@ -73,7 +73,7 @@
             this.debug && console.log("print");
             this.tryOpenConn($.proxy(function() {
                 if(!this.isConnOpen()) {
-                    callback('未找到"打印助手"，请检查"打印助手"是否在运行中。')
+                    callback('未找到"打印助手"，请检查"打印助手"是否在运行中。');
                 } else {
                     this._print_callback_ = callback;
                     this.conn.publish("print", data);
@@ -137,6 +137,6 @@
         CashierName : "杨晓梅",
         RestaurantPhone : "0871-64601199",
         RestaurantAddress : "昆明市滇池路南亚风情第一城A1座三楼"
-    }
+    };
 
 }(window.jQuery);

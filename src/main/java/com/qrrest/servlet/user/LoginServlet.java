@@ -41,7 +41,7 @@ public class LoginServlet extends BaseServlet {
 			return;
 		}
 		new UserAuthService(request.getSession()).setAuth(user);
-		redirect("./Main.jsp");
+		redirect("./Service.jsp");
 	}
 
 }

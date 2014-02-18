@@ -45,28 +45,30 @@ public class TableService {
 		return list;
 	}
 
-	public boolean insertTable(Table table, long r_id) {
+	public boolean insertTable(Table table, long auth_rest_id) {
 		// 新餐桌状态设为1可用
 		table.setTable_status(1);
-		if (table.getRest_id() != r_id) {
+		if (table.getRest_id() != auth_rest_id) {
 			return false;
 		}
 		return tdao.insertTable(table);
 	}
 
-	public boolean updateTable(Table table) {
+	public boolean updateTable(Table table, long auth_rest_id) {
 		Table dbTable = tdao.getTableById(table.getTable_id());
 		// 餐厅与餐桌不匹配、餐桌未处在空闲状态时，不允许修改
-		if (dbTable.getRest_id() != dbTable.getRest_id() || dbTable.getTable_status() != 1) {
+		if (dbTable.getTable_id() == 0
+				|| (table.getRest_id() != auth_rest_id || dbTable.getRest_id() != auth_rest_id)
+				|| dbTable.getTable_status() != 1) {
 			return false;
 		}
 		return tdao.modifyTable(table);
 	}
 
-	public boolean deleteTable(long t_id, long r_id) {
+	public boolean deleteTable(long t_id, long auth_rest_id) {
 		Table table = tdao.getTableById(t_id);
 		// 不存在餐桌、餐桌与餐厅不匹配、餐桌未处在空闲状态时，不允许删除
-		if (table.getTable_id() == 0 || table.getRest_id() != r_id
+		if (table.getTable_id() == 0 || table.getRest_id() != auth_rest_id
 				|| table.getTable_status() != 1) {
 			return false;
 		}

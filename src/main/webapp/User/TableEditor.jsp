@@ -1,3 +1,4 @@
+<%@page import="com.qrrest.service.UserAuthService"%>
 <%@page import="com.qrrest.model.Table"%>
 <%@page import="com.qrrest.service.TableService"%>
 <%@page language="java" import="java.util.*" pageEncoding="UTF-8"%>
@@ -7,6 +8,11 @@ String _sourceId = request.getParameter("id");
 boolean _isActionNew = _sourceId == null;
 String _actionText = _isActionNew ? "新增餐桌" : "编辑餐桌";
 Table _sourceTable = _isActionNew ? null : new TableService().getTableById(_sourceId);
+long _auth_rest_id = new UserAuthService(request.getSession()).getRestId();
+if(_sourceTable != null && (_sourceTable.getTable_id() == 0 || _sourceTable.getRest_id() != _auth_rest_id)) {
+    response.setStatus(500);
+    return;
+}
 %>
 
 <% String _ActionDesc_ = _actionText + ";" + "餐桌管理"; %>

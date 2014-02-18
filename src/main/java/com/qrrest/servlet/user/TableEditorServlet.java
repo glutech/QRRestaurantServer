@@ -50,12 +50,11 @@ public class TableEditorServlet extends BaseServlet {
 		}
 		// edit
 		else {
-			Table table = new Table();
-			table.setTable_id(Long.parseLong(paramSourceId));
+			Table table = new TableService().getTableById(paramSourceId);
 			table.setTable_name(paramName);
 			table.setTable_sort(Integer.parseInt(paramSort));
 			table.setRest_id(authService.getRestId());
-			if (new TableService().updateTable(table)) {
+			if (new TableService().updateTable(table, authService.getRestId())) {
 				redirectAndAlertMsg("./TableList.jsp", "编辑餐桌成功！");
 			} else {
 				redirectAndAlertMsg("./TableEditor.jsp?id=" + paramSourceId,
@@ -63,5 +62,4 @@ public class TableEditorServlet extends BaseServlet {
 			}
 		}
 	}
-
 }

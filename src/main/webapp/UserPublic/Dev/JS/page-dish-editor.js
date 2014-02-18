@@ -70,7 +70,7 @@
                     }
                     $uploadValue.val('');
                     $uploadPreview.attr('src', content);
-                }
+                };
                 reader.readAsDataURL(file);
             } else {
                 resetUploader();
@@ -134,7 +134,7 @@
                     alert('发生错误');
                     $.maskLoading('hide');
                 }
-            })
+            });
         }
 
 	});

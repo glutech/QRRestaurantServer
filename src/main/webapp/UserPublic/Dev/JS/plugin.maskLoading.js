@@ -26,7 +26,7 @@
         },
 
         setImage: function(img) {
-            this.component.find('.plugin-img').attr('src', arguments.length ? img : this.options.img)
+            this.component.find('.plugin-img').attr('src', arguments.length ? img : this.options.img);
         },
 
         show : function() {

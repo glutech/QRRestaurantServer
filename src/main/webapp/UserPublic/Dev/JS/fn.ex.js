@@ -28,7 +28,7 @@
 
 				}
 			}
-		}
+		};
 	};
 
 	$('[data-action=goback]').on('click', function() {

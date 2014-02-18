@@ -50,11 +50,12 @@ public class CategoryEditorServlet extends BaseServlet {
 		}
 		// edit
 		else {
-			Category category = new Category();
-			category.setCat_id(Long.parseLong(paramSourceId));
+			Category category = new CategoryService().getCatByCatId(Long
+					.parseLong(paramSourceId));
 			category.setCat_name(paramName);
 			category.setRest_id(authService.getRestId());
-			if (new CategoryService().updateCategory(category)) {
+			if (new CategoryService().updateCategory(category,
+					authService.getRestId())) {
 				redirectAndAlertMsg("./CategoryList.jsp", "编辑菜品分类成功！");
 			} else {
 				redirectAndAlertMsg("./CategoryEditor.jsp?id=" + paramSourceId,

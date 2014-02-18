@@ -1,10 +1,12 @@
+<%@page import="com.qrrest.service.RestaurantService"%>
 <%@page import="com.qrrest.service.UserAuthService"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
+UserAuthService _authService = new UserAuthService(request.getSession());
 String _PageName_ = request.getParameter("_PageName_");
 String[] _ActionDesc_ = request.getParameter("_ActionDesc_").split(";");
-String _restName = "测试餐厅";
-String _userNickname = new UserAuthService(request.getSession()).getAuthNickname();
+String _restName = new RestaurantService().getRestName(_authService.getRestId());
+String _userNickname = _authService.getAuthNickname();
 String _activeAction = _ActionDesc_[_ActionDesc_.length-1];
 %>
 
