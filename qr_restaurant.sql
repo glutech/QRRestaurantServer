@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-17 19:26:07
+Date: 2014-02-18 10:24:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -187,7 +187,7 @@ CREATE TABLE `dishes` (
   KEY `cat_id` (`cat_id`),
   CONSTRAINT `fromCategory` FOREIGN KEY (`cat_id`) REFERENCES `categories` (`cat_id`) ON UPDATE CASCADE,
   CONSTRAINT `fromRestaurant` FOREIGN KEY (`rest_id`) REFERENCES `restaurants` (`rest_id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dishes
@@ -196,6 +196,7 @@ INSERT INTO `dishes` VALUES ('1', 'test_dish1', 'test description', 'i don\'t kn
 INSERT INTO `dishes` VALUES ('2', 'test_dish2', 'test description', 'i love to eat', '33', 'japanese', '1', '55', '55', '1', '1');
 INSERT INTO `dishes` VALUES ('3', 'test_dish3', 'test description', 'i ove to fuck', '55', 'hhahah', '1', '88', '99', '1', '1');
 INSERT INTO `dishes` VALUES ('4', '麻婆豆腐', '麻婆豆腐好吃呢', '持久的身份了设计费', '66', '好吃', '1', '90', '2', '2', '1');
+INSERT INTO `dishes` VALUES ('5', '测试菜品', '这是菜品描述文字', 'http://wu-kui2.qiniudn.com/FrJuT1cbziFwCdSGX1MJWEVBu18j', '99.99', '测试 滇菜', '1', '0', '0', '5', '1');
 
 -- ----------------------------
 -- Table structure for menudishmap
@@ -411,21 +412,23 @@ INSERT INTO `rcomments` VALUES ('3', '吃死你', '2013-12-19', '1', '23', null)
 DROP TABLE IF EXISTS `restaurants`;
 CREATE TABLE `restaurants` (
   `rest_id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `rest_name` varchar(512) DEFAULT NULL,
-  `rest_desc` varchar(2048) DEFAULT NULL,
-  `rest_type` varchar(128) DEFAULT NULL,
-  `rest_addr` varchar(512) DEFAULT NULL,
-  `rest_tel` varchar(128) DEFAULT NULL,
+  `rest_name` varchar(255) NOT NULL,
+  `rest_desc` varchar(2048) NOT NULL,
+  `rest_type` varchar(128) NOT NULL,
+  `rest_addr` varchar(512) NOT NULL,
+  `rest_tel` varchar(128) NOT NULL,
   `rest_upid` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`rest_id`),
+  UNIQUE KEY `rest_name` (`rest_name`),
   KEY `rest_upid` (`rest_upid`),
-  CONSTRAINT `fromUpRestaurant` FOREIGN KEY (`rest_upid`) REFERENCES `restaurants` (`rest_id`)
+  KEY `rest_type` (`rest_type`),
+  CONSTRAINT `fromUpRestaurant` FOREIGN KEY (`rest_upid`) REFERENCES `restaurants` (`rest_id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of restaurants
 -- ----------------------------
-INSERT INTO `restaurants` VALUES ('1', '测试餐厅1', '我就是测试餐厅', '滇菜', '昆明市人民东路2号', '68865588', null);
+INSERT INTO `restaurants` VALUES ('1', '测试餐厅1`', '我就是测试餐厅`', '西餐', '昆明市人民东路2号`', '68865588`', null);
 INSERT INTO `restaurants` VALUES ('2', '测试餐厅2', '测试餐厅就是我', '川菜', '昆明东风东路121号', '13888444888', null);
 INSERT INTO `restaurants` VALUES ('3', 'test restaurant 3', '3 is me', '西餐', 'England', '8888888', null);
 INSERT INTO `restaurants` VALUES ('4', 'Beef restaurant 4', '4 is me', '西餐', 'France', '777777', null);
