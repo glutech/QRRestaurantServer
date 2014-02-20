@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : localhost_3306
 Source Server Version : 50535
 Source Host           : localhost:3306
-Source Database       : test
+Source Database       : new_rq
 
 Target Server Type    : MYSQL
 Target Server Version : 50535
 File Encoding         : 65001
 
-Date: 2014-02-20 13:41:33
+Date: 2014-02-20 18:08:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -119,18 +119,18 @@ CREATE TABLE `dish_rates` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for dish_tag_map
+-- Table structure for dish_tags_map
 -- ----------------------------
-DROP TABLE IF EXISTS `dish_tag_map`;
-CREATE TABLE `dish_tag_map` (
+DROP TABLE IF EXISTS `dish_tags_map`;
+CREATE TABLE `dish_tags_map` (
   `map_id` int(11) NOT NULL AUTO_INCREMENT,
   `dish_id` int(11) NOT NULL,
   `dish_tag_id` int(11) NOT NULL,
   PRIMARY KEY (`map_id`),
   KEY `dish_id` (`dish_id`),
   KEY `dish_tag_map_ibfk_2` (`dish_tag_id`),
-  CONSTRAINT `dish_tag_map_ibfk_1` FOREIGN KEY (`dish_id`) REFERENCES `dishes` (`dish_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `dish_tag_map_ibfk_2` FOREIGN KEY (`dish_tag_id`) REFERENCES `dish_tag_terms` (`dish_tag_id`) ON UPDATE CASCADE
+  CONSTRAINT `dish_tags_map_ibfk_1` FOREIGN KEY (`dish_id`) REFERENCES `dishes` (`dish_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `dish_tags_map_ibfk_2` FOREIGN KEY (`dish_tag_id`) REFERENCES `dish_tag_terms` (`dish_tag_id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -195,7 +195,7 @@ CREATE TABLE `order_statement_dish_items` (
   `dish_name` varchar(32) NOT NULL,
   `dish_price` double NOT NULL,
   `dish_pic` varchar(255) NOT NULL,
-  `dish_desc` tinyint(4) NOT NULL,
+  `dish_desc` tinytext NOT NULL,
   `dish_cat_name` varchar(8) NOT NULL,
   `source_dish_id_nullabled` int(11) DEFAULT NULL,
   PRIMARY KEY (`item_id`),
@@ -243,7 +243,6 @@ CREATE TABLE `order_users_map` (
 DROP TABLE IF EXISTS `restaurants`;
 CREATE TABLE `restaurants` (
   `rest_id` int(11) NOT NULL AUTO_INCREMENT,
-  `rest_status` enum('') NOT NULL,
   `rest_name` varchar(32) NOT NULL,
   `rest_type_id` int(11) NOT NULL,
   `rest_desc` tinytext NOT NULL,
@@ -254,7 +253,6 @@ CREATE TABLE `restaurants` (
   UNIQUE KEY `rest_name` (`rest_name`),
   KEY `rest_type_id` (`rest_type_id`),
   KEY `rest_upid_nullabled` (`rest_upid_nullabled`),
-  KEY `rest_status` (`rest_status`),
   CONSTRAINT `restaurants_ibfk_1` FOREIGN KEY (`rest_type_id`) REFERENCES `rest_type_terms` (`rest_type_id`) ON UPDATE CASCADE,
   CONSTRAINT `restaurants_ibfk_2` FOREIGN KEY (`rest_upid_nullabled`) REFERENCES `restaurants` (`rest_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -333,14 +331,14 @@ CREATE TABLE `table_type_terms` (
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_catgory` enum('') NOT NULL,
+  `user_category` enum('device','register') NOT NULL,
   `user_name` varchar(255) DEFAULT NULL,
   `user_pwd` varchar(32) DEFAULT NULL,
-  `user_deviceid_nullabled` varchar(255) DEFAULT NULL,
+  `user_device_id` varchar(255) DEFAULT NULL,
   `user_nickname` varchar(32) NOT NULL,
   `user_contact` varchar(32) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name` (`user_name`),
-  UNIQUE KEY `user_deviceid_nullabled` (`user_deviceid_nullabled`),
-  KEY `user_catgory` (`user_catgory`)
+  UNIQUE KEY `user_device_id` (`user_device_id`) USING BTREE,
+  KEY `user_category` (`user_category`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
