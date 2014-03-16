@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Restaurant;
+import com.qrrest.model2.Restaurant;
 import com.qrrest.service.RestaurantService;
 
 public class SearchRestsServlet extends HttpServlet {

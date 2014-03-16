@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 import com.qrrest.service.CommentService;
-import com.qrrest.model.Comment;
+import com.qrrest.model2.Comment;
 
 public class GetCommentServlet extends HttpServlet {
 

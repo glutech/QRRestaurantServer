@@ -1,7 +1,7 @@
 package com.qrrest.service;
 
-import com.qrrest.dao.UsersDao;
-import com.qrrest.model.User;
+import com.qrrest.dao2.UsersDao;
+import com.qrrest.model2.User;
 
 public class ValidateUserService {
 	public ValidateUserService(){

@@ -1,32 +1,39 @@
 package com.qrrest.vo;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import com.qrrest.model.Category;
-import com.qrrest.model.Comment;
 import com.qrrest.model.Dish;
+import com.qrrest.model.DishTagTerm;
+import com.qrrest.model.RestDishCategoryTerm;
 
 public class DishVo {
-	Dish dish;
-	Category cat;
-	//ArrayList<Comment> comments;
-	
+
+	private Dish dish;
+	private List<DishTagTerm> tags;
+	private RestDishCategoryTerm cat;
+
 	public Dish getDish() {
 		return dish;
 	}
+
 	public void setDish(Dish dish) {
 		this.dish = dish;
 	}
-	public Category getCat() {
+
+	public List<DishTagTerm> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<DishTagTerm> tags) {
+		this.tags = tags;
+	}
+
+	public RestDishCategoryTerm getCat() {
 		return cat;
 	}
-	public void setCat(Category cat) {
+
+	public void setCat(RestDishCategoryTerm cat) {
 		this.cat = cat;
 	}
-//	public ArrayList<Comment> getComments() {
-//		return comments;
-//	}
-//	public void setComments(ArrayList<Comment> comments) {
-//		this.comments = comments;
-//	}
+
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="qr_restaurant:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="qr_restaurant.war">
+      <element id="artifact" artifact-name="qr_restaurant:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,40 +1,80 @@
 package com.qrrest.model;
 
 public class User {
-	private long user_id;
-	private String user_name;
-	private String user_pwd;
-	private String user_nickname;
-	private long rest_id;
-	
-	public long getUser_id() {
-		return user_id;
+
+	public static enum UserCategoryEnum {
+		/**
+		 * 表示账户是由设备自动注册的账户
+		 */
+		device,
+		/**
+		 * 表示账户是用户注册的账户
+		 */
+		register;
 	}
-	public void setUser_id(long user_id) {
-		this.user_id = user_id;
+
+	private int userId;
+	private UserCategoryEnum userCategory;
+	private String userName;
+	private String userPwd;
+	private String userDeviceId;
+	private String userNickName;
+	private String userContact;
+
+	public int getUserId() {
+		return userId;
 	}
-	public String getUser_name() {
-		return user_name;
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+
+	public UserCategoryEnum getUserCategory() {
+		return userCategory;
 	}
-	public String getUser_pwd() {
-		return user_pwd;
+
+	public void setUserCategory(UserCategoryEnum userCategory) {
+		this.userCategory = userCategory;
 	}
-	public void setUser_pwd(String user_pwd) {
-		this.user_pwd = user_pwd;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser_nickname(String user_nickname) {
-		this.user_nickname = user_nickname;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getUser_nickname() {
-		return user_nickname;
+
+	public String getUserPwd() {
+		return userPwd;
 	}
-	public long getRest_id() {
-		return rest_id;
+
+	public void setUserPwd(String userPwd) {
+		this.userPwd = userPwd;
 	}
-	public void setRest_id(long rest_id) {
-		this.rest_id = rest_id;
+
+	public String getUserDeviceId() {
+		return userDeviceId;
 	}
+
+	public void setUserDeviceId(String userDeviceId) {
+		this.userDeviceId = userDeviceId;
+	}
+
+	public String getUserNickName() {
+		return userNickName;
+	}
+
+	public void setUserNickName(String userNickName) {
+		this.userNickName = userNickName;
+	}
+
+	public String getUserContact() {
+		return userContact;
+	}
+
+	public void setUserContact(String userContact) {
+		this.userContact = userContact;
+	}
+
 }

@@ -2,8 +2,8 @@ package com.qrrest.service;
 
 import java.util.List;
 
-import com.qrrest.dao.CategoriesDao;
-import com.qrrest.model.Category;
+import com.qrrest.dao2.CategoriesDao;
+import com.qrrest.model2.Category;
 
 public class CategoryService {
 	CategoriesDao cdao;

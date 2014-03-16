@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Comment;
-import com.qrrest.model.Rcomment;
+import com.qrrest.model2.Comment;
+import com.qrrest.model2.Rcomment;
 import com.qrrest.service.RcommentService;
 
 public class WriteRcommentServlet extends HttpServlet {

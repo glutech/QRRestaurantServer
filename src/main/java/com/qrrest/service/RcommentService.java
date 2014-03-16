@@ -4,8 +4,8 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.qrrest.dao.RcommentsDao;
-import com.qrrest.model.Rcomment;
+import com.qrrest.dao2.RcommentsDao;
+import com.qrrest.model2.Rcomment;
 
 public class RcommentService {
 	RcommentsDao rdao;

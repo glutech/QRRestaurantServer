@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.service.CustomerService;
-import com.qrrest.model.Customer;
+import com.qrrest.service.UserService;
+import com.qrrest.model2.Customer;
 
 public class AccountLoginServlet extends HttpServlet {
 
@@ -44,7 +44,7 @@ public class AccountLoginServlet extends HttpServlet {
 		String user_name = request.getParameter("user_name");
 		String password = request.getParameter("password");
 		
-		CustomerService cservice = new CustomerService();
+		UserService cservice = new UserService();
 		Customer cust = new Customer();
 		String err = "no response";
 		PrintWriter out = response.getWriter();

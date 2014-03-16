@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Book;
-import com.qrrest.model.Customer;
-import com.qrrest.model.Menu;
-import com.qrrest.service.BookService;
-import com.qrrest.vo.BookVo;
-import com.qrrest.vo.BookRequestResultVo;
+import com.qrrest.model2.Book;
+import com.qrrest.model2.Customer;
+import com.qrrest.model2.Menu;
+import com.qrrest.service.BookService2;
+import com.qrrest.vo2.BookRequestResultVo;
+import com.qrrest.vo2.BookVo;
 
 public class BookServlet extends HttpServlet {
 
@@ -73,7 +73,7 @@ public class BookServlet extends HttpServlet {
 			dlist.add(Long.valueOf(olist.get(i)));
 		}
 		
-		BookService bservice = new BookService();
+		BookService2 bservice = new BookService2();
 		BookVo bv = bservice.createBook(bk, me, dlist);
 		
 		PrintWriter out = response.getWriter();

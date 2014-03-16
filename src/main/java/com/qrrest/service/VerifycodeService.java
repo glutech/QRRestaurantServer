@@ -13,21 +13,22 @@ import com.qrrest.util.MD5;
 
 public class VerifycodeService {
 
+	private static final String SESSION_KEY = "com.qrrest.service.VerifycodeService.VERIFY_CODE";
+
 	public BufferedImage makeCode(HttpSession session) {
 		VerifycodeMaker maker = new VerifycodeMaker();
 		maker.compute();
 		// 保存验证码至session
-		session.setAttribute("com.qrrest.service.verifycode",
+		session.setAttribute(SESSION_KEY,
 				MD5.get(maker.getCode().toLowerCase()));
 		return maker.getImage();
 	}
 
 	public boolean verify(String code, HttpSession session) {
 		// 提取之前生成、保存在session内的验证码
-		Object sessionCode = session
-				.getAttribute("com.qrrest.service.verifycode");
+		Object sessionCode = session.getAttribute(SESSION_KEY);
 		// 取出后立即清除上一次使用的验证码
-		session.removeAttribute("com.qrrest.service.verifycode");
+		session.removeAttribute(SESSION_KEY);
 		return MD5.get(code.toLowerCase()).equals(sessionCode);
 	}
 

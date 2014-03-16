@@ -1,47 +1,94 @@
 package com.qrrest.model;
 
 public class Table {
-	private long table_id;
-	private String table_name;
-	private String table_type;
-	private int table_sort;
-	private int table_status;
-	private long rest_id;
-	
-	public long getTable_id() {
-		return table_id;
+
+	public static enum TableStatusEnum implements IStatusEnum {
+
+		/**
+		 * 表示餐桌处于空闲状态
+		 */
+		free("空闲"),
+		/**
+		 * 表示餐桌处于已预定状态
+		 */
+		booked("已预定"),
+		/**
+		 * 表示餐桌正在进行服务
+		 */
+		serving("服务中"),
+		/**
+		 * 表示餐桌因餐厅的原因暂时保留不进行使用
+		 */
+		controlled("预留"),
+		/**
+		 * 表示餐桌因客观原因被禁止使用
+		 */
+		blocked("禁用");
+
+		private String nameZHCN;
+
+		private TableStatusEnum(String nameZHCN) {
+			this.nameZHCN = nameZHCN;
+		}
+
+		public String getNameZHCN() {
+			return nameZHCN;
+		}
 	}
-	public void setTable_id(long table_id) {
-		this.table_id = table_id;
+
+	private int tableId;
+	private TableStatusEnum tableStatus;
+	private String tableName;
+	private int tableTypeId;
+	private int tableSort;
+	private int restId;
+
+	public int getTableId() {
+		return tableId;
 	}
-	public String getTable_name() {
-		return table_name;
+
+	public void setTableId(int tableId) {
+		this.tableId = tableId;
 	}
-	public void setTable_name(String table_name) {
-		this.table_name = table_name;
+
+	public TableStatusEnum getTableStatus() {
+		return tableStatus;
 	}
-	public String getTable_type() {
-		return table_type;
+
+	public void setTableStatus(TableStatusEnum tableStatus) {
+		this.tableStatus = tableStatus;
 	}
-	public void setTable_type(String table_type) {
-		this.table_type = table_type;
+
+	public String getTableName() {
+		return tableName;
 	}
-	public int getTable_sort() {
-		return table_sort;
+
+	public void setTableName(String tableName) {
+		this.tableName = tableName;
 	}
-	public void setTable_sort(int table_sort) {
-		this.table_sort = table_sort;
+
+	public int getTableTypeId() {
+		return tableTypeId;
 	}
-	public int getTable_status() {
-		return table_status;
+
+	public void setTableTypeId(int tableTypeId) {
+		this.tableTypeId = tableTypeId;
 	}
-	public void setTable_status(int table_status) {
-		this.table_status = table_status;
+
+	public int getTableSort() {
+		return tableSort;
 	}
-	public long getRest_id() {
-		return rest_id;
+
+	public void setTableSort(int tableSort) {
+		this.tableSort = tableSort;
 	}
-	public void setRest_id(long rest_id) {
-		this.rest_id = rest_id;
+
+	public int getRestId() {
+		return restId;
 	}
+
+	public void setRestId(int restId) {
+		this.restId = restId;
+	}
+
 }

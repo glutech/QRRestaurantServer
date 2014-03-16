@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.service.CustomerService;
+import com.qrrest.service.UserService;
 
 public class SignupServlet extends HttpServlet {
 
@@ -55,7 +55,7 @@ public class SignupServlet extends HttpServlet {
 		String device_id = request.getParameter("device_id");
 		System.out.println("Let me fuck:"+ user_name+"~"+password+"~"+device_id);
 		
-		CustomerService cservice = new CustomerService();
+		UserService cservice = new UserService();
 		boolean flag = false;
 		if(cservice.validateCustomerName(user_name)){
 			flag = cservice.createCustomerWithName(user_name, password, device_id);

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 import com.qrrest.service.TableService;
-import com.qrrest.model.Table;
+import com.qrrest.model2.Table;
 
 public class GetAllTablesServlet extends HttpServlet {
 

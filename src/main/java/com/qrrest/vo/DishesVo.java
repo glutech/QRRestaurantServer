@@ -3,36 +3,37 @@ package com.qrrest.vo;
 import java.util.List;
 
 import com.qrrest.model.Dish;
-import com.qrrest.model.Category;
+import com.qrrest.model.RestDishCategoryTerm;
+import com.qrrest.model.Restaurant;
 
 public class DishesVo {
-	String rest_id;
-	String rest_name;
-	List<Dish> dishlist;
-	List<Category> catlist;
-	
-	public String getRest_id() {
-		return rest_id;
+
+	private Restaurant rest;
+	private List<Dish> dishList;
+	private List<RestDishCategoryTerm> catList;
+
+	public Restaurant getRest() {
+		return rest;
 	}
-	public void setRest_id(String rest_id) {
-		this.rest_id = rest_id;
+
+	public void setRest(Restaurant rest) {
+		this.rest = rest;
 	}
-	public String getRest_name() {
-		return rest_name;
+
+	public List<Dish> getDishList() {
+		return dishList;
 	}
-	public void setRest_name(String rest_name) {
-		this.rest_name = rest_name;
+
+	public void setDishList(List<Dish> dishList) {
+		this.dishList = dishList;
 	}
-	public List<Dish> getDishlist() {
-		return dishlist;
+
+	public List<RestDishCategoryTerm> getCatList() {
+		return catList;
 	}
-	public void setDishlist(List<Dish> dishlist) {
-		this.dishlist = dishlist;
+
+	public void setCatList(List<RestDishCategoryTerm> catList) {
+		this.catList = catList;
 	}
-	public List<Category> getCatlist() {
-		return catlist;
-	}
-	public void setCatlist(List<Category> catlist) {
-		this.catlist = catlist;
-	}
+
 }

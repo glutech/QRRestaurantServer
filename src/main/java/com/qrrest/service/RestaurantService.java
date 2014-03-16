@@ -1,51 +1,83 @@
 package com.qrrest.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import com.qrrest.dao.RestTypeTermsDao;
 import com.qrrest.dao.RestaurantsDao;
+import com.qrrest.model.RestTypeTerm;
 import com.qrrest.model.Restaurant;
+import com.qrrest.vo.RestaurantVo;
 
 public class RestaurantService {
-	RestaurantsDao rdao;
-	public RestaurantService(){
-		rdao = new RestaurantsDao();
+
+	private RestaurantsDao restsDao = new RestaurantsDao();
+	private RestTypeTermsDao typesDao = new RestTypeTermsDao();
+
+	public List<Restaurant> getAllRests() {
+		return restsDao.getAllRests();
 	}
-	
-	public List<Restaurant> listAllRests(){
-		List<Restaurant> list = new ArrayList<Restaurant>();
-		list = rdao.getAllRests();
-		
-		return list;
+
+	public Restaurant getRestById(int restId) {
+		return restsDao.getRestById(restId);
 	}
-	
-	public Restaurant getRestById(String r_id){
-		Restaurant rest;
-		rest = rdao.getRestById(Long.valueOf(r_id));
-		
-		return rest;
+
+	public String getRestNameById(int restId) {
+		return restsDao.getRestNameById(restId);
 	}
-	
-	public Restaurant getRestById(long rest_id) {
-		return rdao.getRestById(rest_id);
+
+	public List<Restaurant> getRestsByName(String keyword) {
+		return restsDao.getRestsByName(keyword);
 	}
-	
-	public List<Restaurant> getRestsByName(String keyword){
-		List<Restaurant> list;
-		list = rdao.getRestsByName(keyword);
-		
-		return list;
-	}
-	
-	public boolean updateRestaurant(Restaurant rest, long auth_rest_id) {
+
+	public boolean updateRestaurant(Restaurant rest, int authRestId) {
 		// 确保餐厅是当前管理员所管理的
-		if(rest.getRest_id() != auth_rest_id) {
+		if (rest.getRestId() != authRestId) {
 			return false;
 		}
-		return rdao.modifyRest(rest);
+		return restsDao.updateRest(rest);
 	}
-	
-	public String getRestName(long rest_id) {
-		return rdao.getRestName(rest_id);
+
+	public RestTypeTerm getTypeByTypeId(int typeId) {
+		return typesDao.getTypeById(typeId);
 	}
+
+	public List<RestTypeTerm> getAllTypes() {
+		return typesDao.getAllTypes();
+	}
+
+	public Map<Integer, RestTypeTerm> getAllTypesToMap() {
+		Map<Integer, RestTypeTerm> result = new HashMap<Integer, RestTypeTerm>();
+		for (RestTypeTerm type : getAllTypes()) {
+			result.put(type.getRestTypeId(), type);
+		}
+		return result;
+	}
+
+	/*
+	 * vo
+	 */
+
+	public RestaurantVo getRestVoByRestId(int restId) {
+		RestaurantVo result = new RestaurantVo();
+		result.setRest(getRestById(restId));
+		result.setType(getTypeByTypeId(result.getRest().getRestTypeId()));
+		return result;
+	}
+
+	public List<RestaurantVo> getAllRestVos() {
+		List<Restaurant> rests = getAllRests();
+		Map<Integer, RestTypeTerm> types = getAllTypesToMap();
+		List<RestaurantVo> result = new ArrayList<RestaurantVo>();
+		for (Restaurant rest : rests) {
+			RestaurantVo vo = new RestaurantVo();
+			vo.setRest(rest);
+			vo.setType(types.get(rest.getRestTypeId()));
+			result.add(vo);
+		}
+		return result;
+	}
+
 }

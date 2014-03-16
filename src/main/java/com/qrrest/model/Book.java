@@ -1,54 +1,80 @@
 package com.qrrest.model;
 
+import java.sql.Timestamp;
+
 public class Book {
-	private long book_id;
-	private String book_name;
-	private String book_tel;
-	private String book_time;
-	private String book_memo;
-	private long customer_id;
-	private long menu_id;
-	
-	public long getBook_id() {
-		return book_id;
+
+	private int bookId;
+	private String bookName;
+	private String bookTel;
+	private Timestamp bookTime;
+	private String bookMemo;
+	public int userId;
+	public int restId;
+	public Integer orderIdNullabled;
+
+	public int getBookId() {
+		return bookId;
 	}
-	public void setBook_id(long book_id) {
-		this.book_id = book_id;
+
+	public void setBookId(int bookId) {
+		this.bookId = bookId;
 	}
-	public String getBook_name() {
-		return book_name;
+
+	public String getBookName() {
+		return bookName;
 	}
-	public void setBook_name(String book_name) {
-		this.book_name = book_name;
+
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
 	}
-	public String getBook_tel() {
-		return book_tel;
+
+	public String getBookTel() {
+		return bookTel;
 	}
-	public void setBook_tel(String book_tel) {
-		this.book_tel = book_tel;
+
+	public void setBookTel(String bookTel) {
+		this.bookTel = bookTel;
 	}
-	public long getCustomer_id() {
-		return customer_id;
+
+	public Timestamp getBookTime() {
+		return bookTime;
 	}
-	public void setCustomer_id(long customer_id) {
-		this.customer_id = customer_id;
+
+	public void setBookTime(Timestamp bookTime) {
+		this.bookTime = bookTime;
 	}
-	public long getMenu_id() {
-		return menu_id;
+
+	public String getBookMemo() {
+		return bookMemo;
 	}
-	public void setMenu_id(long menu_id) {
-		this.menu_id = menu_id;
+
+	public void setBookMemo(String bookMemo) {
+		this.bookMemo = bookMemo;
 	}
-	public String getBook_time() {
-		return book_time;
+
+	public int getUserId() {
+		return userId;
 	}
-	public void setBook_time(String book_time) {
-		this.book_time = book_time;
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public String getBook_memo() {
-		return book_memo;
+
+	public int getRestId() {
+		return restId;
 	}
-	public void setBook_memo(String book_memo) {
-		this.book_memo = book_memo;
+
+	public void setRestId(int restId) {
+		this.restId = restId;
 	}
+
+	public Integer getOrderIdNullabled() {
+		return orderIdNullabled;
+	}
+
+	public void setOrderIdNullabled(Integer orderIdNullabled) {
+		this.orderIdNullabled = orderIdNullabled;
+	}
+
 }

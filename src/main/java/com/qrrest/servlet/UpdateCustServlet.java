@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Customer;
-import com.qrrest.service.CustomerService;
+import com.qrrest.model2.Customer;
+import com.qrrest.service.UserService;
 
 public class UpdateCustServlet extends HttpServlet {
 
@@ -48,7 +48,7 @@ public class UpdateCustServlet extends HttpServlet {
 		Customer olduser = gson.fromJson(oldu, Customer.class);
 		Customer newuser = gson.fromJson(newu, Customer.class);
 		
-		CustomerService cservice = new CustomerService();
+		UserService cservice = new UserService();
 		
 		PrintWriter out = response.getWriter();
 		String result = null;

@@ -2,8 +2,8 @@ package com.qrrest.service;
 
 import java.util.ArrayList;
 
-import com.qrrest.dao.CommentsDao;
-import com.qrrest.model.Comment;
+import com.qrrest.dao2.CommentsDao;
+import com.qrrest.model2.Comment;
 
 public class CommentService {
 	CommentsDao cdao;

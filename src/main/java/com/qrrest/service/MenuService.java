@@ -8,16 +8,16 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import com.qrrest.dao.CmMap;
-import com.qrrest.dao.DishesDao;
-import com.qrrest.dao.MenuDishMap;
-import com.qrrest.dao.MenusDao;
-import com.qrrest.model.Dish;
-import com.qrrest.model.Menu;
-import com.qrrest.model.Restaurant;
-import com.qrrest.vo.HistoryVo;
-import com.qrrest.vo.MenuVo;
-import com.qrrest.wsorder.WSVirtualOrder;
+import com.qrrest.dao2.CmMap;
+import com.qrrest.dao2.DishesDao;
+import com.qrrest.dao2.MenuDishMap;
+import com.qrrest.dao2.MenusDao;
+import com.qrrest.model2.Dish;
+import com.qrrest.model2.Menu;
+import com.qrrest.model2.Restaurant;
+import com.qrrest.vo2.HistoryVo;
+import com.qrrest.vo2.MenuVo;
+import com.qrrest.ws.app.VirtualOrder;
 
 public class MenuService {
 	MenusDao mdao;

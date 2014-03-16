@@ -1,54 +1,69 @@
 package com.qrrest.model;
 
 public class Restaurant {
-	private long rest_id;
-	private String rest_name;
-	private String rest_desc;
-	private String rest_type;
-	private String rest_addr;
-	private String rest_tel;
-	private long rest_upid;
-	
-	public long getRest_id() {
-		return rest_id;
+
+	private int restId;
+	private String restName;
+	private int restTypeId;
+	private String restDesc;
+	private String restAddr;
+	private String restTel;
+	private Integer restUpidNullabled;
+
+	public int getRestId() {
+		return restId;
 	}
-	public void setRest_id(long rest_id) {
-		this.rest_id = rest_id;
+
+	public void setRestId(int restId) {
+		this.restId = restId;
 	}
-	public String getRest_name() {
-		return rest_name;
+
+	public String getRestName() {
+		return restName;
 	}
-	public void setRest_name(String rest_name) {
-		this.rest_name = rest_name;
+
+	public void setRestName(String restName) {
+		this.restName = restName;
 	}
-	public String getRest_desc() {
-		return rest_desc;
+
+	public int getRestTypeId() {
+		return restTypeId;
 	}
-	public void setRest_desc(String rest_desc) {
-		this.rest_desc = rest_desc;
+
+	public void setRestTypeId(int restTypeId) {
+		this.restTypeId = restTypeId;
 	}
-	public String getRest_type() {
-		return rest_type;
+
+	public String getRestDesc() {
+		return restDesc;
 	}
-	public void setRest_type(String rest_type) {
-		this.rest_type = rest_type;
+
+	public void setRestDesc(String restDesc) {
+		this.restDesc = restDesc;
 	}
-	public String getRest_addr() {
-		return rest_addr;
+
+	public String getRestAddr() {
+		return restAddr;
 	}
-	public void setRest_addr(String rest_addr) {
-		this.rest_addr = rest_addr;
+
+	public void setRestAddr(String restAddr) {
+		this.restAddr = restAddr;
 	}
-	public String getRest_tel() {
-		return rest_tel;
+
+	public String getRestTel() {
+		return restTel;
 	}
-	public void setRest_tel(String rest_tel) {
-		this.rest_tel = rest_tel;
+
+	public void setRestTel(String restTel) {
+		this.restTel = restTel;
 	}
-	public long getRest_upid() {
-		return rest_upid;
+
+	public Integer getRestUpidNullabled() {
+		return restUpidNullabled;
 	}
-	public void setRest_upid(long rest_upid) {
-		this.rest_upid = rest_upid;
+
+	public void setRestUpidNullabled(Integer restUpidNullabled) {
+		this.restUpidNullabled = restUpidNullabled;
 	}
+
 }

@@ -13,15 +13,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Comment;
-import com.qrrest.model.Dish;
-import com.qrrest.model.Restaurant;
+import com.qrrest.model2.Comment;
+import com.qrrest.model2.Dish;
+import com.qrrest.model2.Restaurant;
 import com.qrrest.service.CommentService;
 import com.qrrest.service.MenuService;
 import com.qrrest.service.TableService;
-import com.qrrest.vo.MenuVo;
-import com.qrrest.wsorder.WSOrderingListHelper;
-import com.qrrest.wsorder.WSVirtualOrder;
+import com.qrrest.vo2.MenuVo;
+import com.qrrest.ws.app.VirtualOrder;
+import com.qrrest.ws.app.WSOrderingListHelper;
 
 public class SubmitOrderServlet extends HttpServlet {
 
@@ -63,7 +63,7 @@ public class SubmitOrderServlet extends HttpServlet {
 		TableService tservice = new TableService();
 
 		Restaurant rest = tservice.getRestByTableId(String.valueOf(t_id));
-		WSVirtualOrder wso = WSOrderingListHelper.getInstance()
+		VirtualOrder wso = WSOrderingListHelper.getInstance()
 				.getSubmittedOrderByTableId(String.valueOf(t_id));
 
 		MenuVo mv = mservice.createMenu(t_id, rest.getRest_id(),

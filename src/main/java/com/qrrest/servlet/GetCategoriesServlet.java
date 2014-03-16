@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
-import com.qrrest.model.Category;
+import com.qrrest.model2.Category;
 import com.qrrest.service.CategoryService;
 
 public class GetCategoriesServlet extends HttpServlet {

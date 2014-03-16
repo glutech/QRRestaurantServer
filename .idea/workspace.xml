@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6ea47d4-76ae-44a9-8faa-2ff33d6bee60" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\BooksDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\CategoriesDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\CmMap.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\CommentsDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\ConnectionFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\CustomersDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\MenuDishMap.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\MenusDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\RcommentsDao.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\SQLExecution.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\dao\c3p0.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\model\Category.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\model\Comment.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\model\Customer.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\model\Menu.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\model\Rcomment.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\service\CustomerService.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\service\UserAuthService.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\service\filter\user\AuthFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\service\filter\user\EncodingFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\GetRestServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\ListRestsServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\BaseServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\CategoryEditorServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\DishEditorServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\LoginServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\PicUploaderCallbackServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\PicUploaderGatewayServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\RestaurantEditorServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\TableEditorServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\Util.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\servlet\user\VerifycodeServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\vo\BookRequestResultVo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\vo\BookVo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\vo\HistoryVo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\vo\MenuVo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\vo\ScanResultVo.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\DishUsers.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\DishesMapBuilderForGson.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\WSOrderMessageInbound.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\WSOrderMessageInboundPool.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\WSOrderingListHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\java\com\qrrest\wsorder\WSVirtualOrder.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\media.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\media.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\mixins.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\mixins.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\normalize.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\print.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\variables.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\css\variables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\dist\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\affix.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\alert.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\modal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\popover.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\tab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\js\transition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\badges.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\close.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\code.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\forms.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\grid.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\labels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\media.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\modals.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\navs.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\pager.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\panels.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\print.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\tables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\theme.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\type.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootstrap\less\wells.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\flatly\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\flatly\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\flatly\bootswatch.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Bootswatch\flatly\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\func-tpl.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\main.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-category-editor.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-category-list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-dish-editor.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-dish-list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-login.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-reservation.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-restaurant-editor.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-restaurant-info.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-table-editor.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-table-list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\page-table.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\plugin.exValidate.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\plugin.maskLoading.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\section-reservation-editor.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\section-table-status.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\CSS\vars-model-table.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\fn.ex.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-category-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-category-list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-dish-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-login.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-reservation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-restaurant-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-table-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-table-list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\page-table.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\plugin.exValidate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\plugin.maskLoading.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\plugin.printAgent.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\plugin.qiniuUploader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\section-reservation-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Dev\JS\section-table-status.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Img\dish-cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Img\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Img\verifycode.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Less\less-1.5.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Validation\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Validation\additional-methods.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Validation\additional-methods.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Validation\jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\Validation\jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\XSockets\XSockets.latest.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\XSockets\XSockets.latest.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\XSockets\XSockets.latest.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\common.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\common.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\jQuery\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\jQuery\jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\UserPublic\jQuery\jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\CategoryEditor.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\CategoryList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\DishEditor.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\DishList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\Login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\RestaurantEditor.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\RestaurantInfo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\TableEditor.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\TableList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\_PageFooter_.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\_PageHeader_.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\_Page_Welcome_.jsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\page-board.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\page-reservation.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\section-board-status.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\section-reservation-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Works\QRRestaurantServer\src\main\webapp\User\ws-test.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/AccountLoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/AccountLoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Book.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/BookService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/BookServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/BookServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/CategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/CategoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/CommentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/CommentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/DeviceLoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/DeviceLoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Dish.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Dish.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/DishService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/DishService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/DishVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/DishVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/DishesDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/DishesDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/DishesVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/DishesVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetAllTablesServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetAllTablesServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetCategoriesServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetCategoriesServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetCommentServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetCommentServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetDishesServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetDishesServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetOrderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetOrderServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetRestInfoServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/GetRestInfoServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/MenuService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/MenuService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/RcommentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/RcommentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Restaurant.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Restaurant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/RestaurantService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/RestaurantService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/RestaurantsDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/RestaurantsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/ScanServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/ScanServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SearchRestsServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SearchRestsServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SignupServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SignupServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SubmitBookOrder.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SubmitBookOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SubmitOrderServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SubmitOrderServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Table.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/model/Table.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/TableVo.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/vo/TableVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/TablesDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/TablesDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/UpdateCustServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/UpdateCustServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/UsersDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/dao/UsersDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/ValidateUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/ValidateUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/service/VerifycodeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/service/VerifycodeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/wsorder/WSLog.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/wsorder/WSLog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/wsorder/WSOrderWSServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/wsorder/WSOrderWSServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/WriteCommentServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/WriteCommentServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/WriteRcommentServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/qrrest/servlet/WriteRcommentServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+    </list>
+    <ignored path="qr_restaurant.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="qr_restaurant" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="RestaurantsDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/RestaurantsDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DishesDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/DishesDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="169" column="66" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="3689">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="25" selection-start="527" selection-end="527" vertical-scroll-proportion="0.33224756" vertical-offset="119" max-vertical-offset="2737">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchRestsServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SearchRestsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="40" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1037">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qrrest/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qrrest/dao/RestaurantsDao.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code maturity issues</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Spring Model</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrrest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrrest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qr_restaurant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QRRestaurantServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qrrest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="project.propDebugger" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/qr_restaurant" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat_qr_restaurant">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_qr_restaurant" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6304" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat_qr_restaurant" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk1.7.0_51">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/qr_restaurant/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$/target/qr_restaurant">
+          <settings>
+            <option name="CONTEXT_PATH" value="/qr_restaurant" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_qr_restaurant_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="true" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="true" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6304" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="false" />
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat_qr_restaurant" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\kk\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6ea47d4-76ae-44a9-8faa-2ff33d6bee60" name="Default" comment="" />
+      <created>1394251220004</created>
+      <updated>1394251220004</updated>
+      <workItem from="1394251221907" duration="369000" />
+      <workItem from="1394251612615" duration="42000" />
+      <workItem from="1394251667742" duration="68000" />
+      <workItem from="1394251752061" duration="42000" />
+      <workItem from="1394251807629" duration="54000" />
+      <workItem from="1394251875758" duration="62000" />
+      <workItem from="1394251952805" duration="158000" />
+      <workItem from="1394252125175" duration="511000" />
+      <workItem from="1394252649596" duration="238000" />
+      <workItem from="1394252901064" duration="91000" />
+      <workItem from="1394253004639" duration="43000" />
+      <workItem from="1394253061150" duration="100000" />
+      <workItem from="1394253173448" duration="520000" />
+      <workItem from="1394253706413" duration="87000" />
+      <workItem from="1394253806363" duration="53000" />
+      <workItem from="1394253872269" duration="27000" />
+      <workItem from="1394253912928" duration="104000" />
+      <workItem from="1394254032522" duration="900000" />
+      <workItem from="1394254945748" duration="172000" />
+      <workItem from="1394255130849" duration="374000" />
+      <workItem from="1394255518830" duration="122000" />
+      <workItem from="1394255655846" duration="318000" />
+      <workItem from="1394256137285" duration="1208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5663000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="3097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="23" selection-start="4646" selection-end="4646" vertical-scroll-proportion="0.0" vertical-offset="1808" max-vertical-offset="2608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="34" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="75" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="7" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1035">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="24" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="32" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="42" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="51" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="2090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="1311">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="60" selection-start="919" selection-end="919" vertical-scroll-proportion="0.5689655" vertical-offset="0" max-vertical-offset="1104">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.9444444" vertical-offset="0" max-vertical-offset="1616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/RestDishCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="692" selection-end="692" vertical-scroll-proportion="0.3888889" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-0.15041128" vertical-offset="528" max-vertical-offset="2608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/RestaurantsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/dao/DishesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="66" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/servlet/SearchRestsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="40" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Admin/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07471264" vertical-offset="39" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qrrest/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="25" selection-start="527" selection-end="527" vertical-scroll-proportion="0.33224756" vertical-offset="119" max-vertical-offset="2737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>qr_restaurant:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>qr_restaurant</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>IDEA IU-133.696</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: c3p0:c3p0:0.9.1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
